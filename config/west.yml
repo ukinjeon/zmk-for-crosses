@@ -12,6 +12,9 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: DoctorWangWang
       revision: main
+    - name: zmk-nice-oled-zz
+      url: https://github.com/zzuse/zmk-nice-oled-zz
+      revision: main
       
   self:
     path: config
