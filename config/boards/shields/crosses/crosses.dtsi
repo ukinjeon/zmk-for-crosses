@@ -3,7 +3,7 @@
 
 / {
     crosses_layout: crosses_layout {
-        compatible = "zmk,crosses-layout";
+        compatible = "zmk,physical-layout";
         display-name = "crosses";
 
         kscan = <&kscan0>;
