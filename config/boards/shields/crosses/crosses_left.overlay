@@ -16,38 +16,3 @@
 
 		;
 };
-
-
-&pinctrl {
-    i2c0_default: i2c0_default {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 1, 4)>,   
-                    <NRF_PSEL(TWIM_SCL, 1, 6)>;  
-            bias-pull-up;                        
-        };
-    };
-};
-
-
-&i2c0 {
-    status = "okay";
-    compatible = "nordic,nrf-twim";
-    clock-frequency = <100000>;
-    pinctrl-0 = <&i2c0_default>;
-    pinctrl-names = "default";
-
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        reg = <0x3C>;
-        width = <128>;
-        height = <32>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <31>;
-        segment-remap;
-        com-invdir;
-        com-sequential;
-        prechargep = <0x22>;
-    };
-};
