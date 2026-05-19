@@ -105,6 +105,6 @@
         segment-remap;
         com-invdir;
         com-sequential;
-        prechargep 
+        prechargep = <0x22>;
     };
 };
