@@ -53,6 +53,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &crosses_layout;
+        zephyr,display = &oled;
     };
 
     default_transform: keymap_transform_0 {
