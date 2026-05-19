@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <physical_layouts.dtsi>
+#include "physical_layouts.dtsi"
 
 / {
     crosses_layout: crosses_layout {
