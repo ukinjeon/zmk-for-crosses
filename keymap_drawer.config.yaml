@@ -1,0 +1,128 @@
+# keymap_drawer.config.yaml
+draw_config:
+  
+  key_w: 60.0
+  key_h: 56.0
+  split_gap: 30.0
+  combo_side_ratio: 0.4
+
+  
+  font_size: 14
+  font_family: "JetBrains Mono, Inter, system-ui, sans-serif"
+  
+  
+  style_css: |
+    svg { background: #1a1b26; color: #a9b1d6; }
+    rect.key { fill: #24283b; stroke: #414868; stroke-width: 1.5; rx: 6; ry: 6; }
+    rect.hold { fill: #2ac3de; }
+    text { fill: #c0caf5; font-weight: 500; }
+    text.hold { fill: #1a1b26; font-weight: bold; font-size: 11px; }
+    text.shifted { fill: #7aa2f7; font-size: 11px; }
+    text.accent { fill: #bb9af7; font-weight: bold; }
+    path.combo { stroke: #ff9e64; stroke-width: 2; fill: none; stroke-linecap: round; }
+    text.combo { fill: #ff9e64; font-size: 11px; }
+    rect.layer-label { fill: #414868; rx: 4; ry: 4; }
+    text.layer-label { fill: #7ccdfd; font-weight: bold; }
+
+parse_config:
+  
+  zmk_keycode_map:
+    EXCLAMATION: '!'
+    EXCL: '!'
+    AT_SIGN: '@'
+    AT: '@'
+    HASH: '#'
+    POUND: '#'
+    DOLLAR: '$'
+    DLLR: '$'
+    PERCENT: '%'
+    PRCNT: '%'
+    CARET: '^'
+    AMPERSAND: '&'
+    AMPS: '&'
+    ASTERISK: '*'
+    ASTRK: '*'
+    STAR: '*'
+    LEFT_PARENTHESIS: '('
+    LPAR: '('
+    RIGHT_PARENTHESIS: ')'
+    RPAR: ')'
+    EQUAL: '='
+    PLUS: '+'
+    MINUS: '-'
+    UNDERSCORE: '_'
+    UNDER: '_'
+    SLASH: '/'
+    QUESTION: '?'
+    QMARK: '?'
+    BACKSLASH: '\'
+    PIPE: '|'
+    NON_US_HASH: '#'
+    NON_US_BSLH: '\'
+    SEMICOLON: ';'
+    SEMI: ';'
+    COLON: ':'
+    SINGLE_QUOTE: "'"
+    SQT: "'"
+    APOSTROPHE: "'"
+    APOS: "'"
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    GRAVE: '`'
+    TILDE: '~'
+    LESS_THAN: '<'
+    LT: '<'
+    GREATER_THAN: '>'
+    GT: '>'
+    COMMA: ','
+    PERIOD: '.'
+    DOT: '.'
+    LEFT_BRACKET: '['
+    LBKT: '['
+    RIGHT_BRACKET: ']'
+    RBKT: ']'
+    LEFT_BRACE: '{'
+    LBRC: '{'
+    RIGHT_BRACE: '}'
+    RBRC: '}'
+    SPACE: 'Space'
+    SPC: 'Space'
+    ENTER: 'Enter'
+    RET: 'Enter'
+    TAB: 'Tab'
+    BACKSPACE: 'BSPC'
+    BSPC: 'BSPC'
+    DELETE: 'DEL'
+    DEL: 'DEL'
+    ESCAPE: 'ESC'
+    ESC: 'ESC'
+    
+    
+    LEFT_CONTROL: 'Ctrl'
+    LCTRL: 'Ctrl'
+    RIGHT_CONTROL: 'Ctrl'
+    RCTRL: 'Ctrl'
+    LEFT_SHIFT: 'Shift'
+    LSHIFT: 'Shift'
+    RIGHT_SHIFT: 'Shift'
+    RSHIFT: 'Shift'
+    LEFT_ALT: 'Alt'
+    LALT: 'Alt'
+    RIGHT_ALT: 'Alt'
+    RALT: 'Alt'
+    LEFT_GUI: 'Cmd'
+    LGUI: 'Cmd'
+    RIGHT_GUI: 'Cmd'
+    RGUI: 'Cmd'
+    
+    
+    UP: '↑'
+    DOWN: '↓'
+    LEFT: '←'
+    RIGHT: '→'
+    HOME: 'Home'
+    END: 'End'
+    PAGE_UP: 'PgUp'
+    PG_UP: 'PgUp'
+    PAGE_DOWN: 'PgDn'
+    PG_DN: 'PgDn'
