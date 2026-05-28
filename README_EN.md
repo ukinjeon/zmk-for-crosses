@@ -1,6 +1,6 @@
 # ZMK Config for Crosses/Bridges
 
-![ZMK Build](https://img.shields.io/github/actions/workflow/status/HeeTuic/zmk-for-crosses/build.yml?label=ZMK%20Build&style=for-the-badge&color=2ac3de)
+![ZMK Build](https://img.shields.io/github/actions/workflow/status/HeeTuic/zmk-for-crosses/build.yml?branch=35&label=ZMK%20Build&style=for-the-badge&color=2ac3de)
 ![Keymap Draw](https://img.shields.io/github/actions/workflow/status/HeeTuic/zmk-for-crosses/draw-keymaps.yml?label=Keymap%20Draw&style=for-the-badge&color=bb9af7)
 [![English](https://img.shields.io/badge/Document-English-blue?style=for-the-badge)](README_EN.md)
 [![简体中文](https://img.shields.io/badge/文档-简体中文-orange?style=for-the-badge)](README_ZH.md)
