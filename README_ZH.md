@@ -4,7 +4,7 @@
 
 本仓库为 **“喵喵喵猫”硬件改版**的 Crosses/Bridges 分体键盘提供了官方 ZMK 固件。它原生支持通过 ZMK Studio 进行实时改键，并深度优化了无线连接与功耗。
 
-### 该分支适用于 3x5 配列单手轨迹球变体。
+### 该分支适用于 3x5 配列单轨迹球版本
 - 3x5 配列双轨迹球无线版本，请使用此库：[zmk-for-crosses35-dual](https://github.com/HeeTuic/zmk-for-crosses35-dual)  
 - 3x6 配列双轨迹球无线版本，请使用此库：[zmk-for-crosses36-dual](https://github.com/HeeTuic/zmk-for-crosses36-dual)  
 - 4x6 配列双轨迹球无线版本，请使用此库：[zmk-for-crosses46-dual](https://github.com/HeeTuic/zmk-for-crosses46-dual)  
