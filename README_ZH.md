@@ -1,8 +1,8 @@
-# 适用于 Crosses/Bridges 的 ZMK 固件配置
+# ZMK Config for Crosses/Bridges
 
 ![ZMK 构建状态](https://img.shields.io/github/actions/workflow/status/HeeTuic/zmk-for-crosses/build.yml?branch=35&label=ZMK%20Build&style=for-the-badge&color=2ac3de) ![键盘映射图绘制](https://img.shields.io/github/actions/workflow/status/HeeTuic/zmk-for-crosses/draw-keymaps.yml?label=Keymap%20Draw&style=for-the-badge&color=bb9af7) &nbsp;&nbsp;&nbsp;&nbsp; [![English](https://img.shields.io/badge/%F0%9F%8C%90%20Language-English-1b4c7e?style=for-the-badge)](README_EN.md)[![简体中文](https://img.shields.io/badge/-%20%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-2e6b5e?style=for-the-badge)](README_ZH.md)
 
-本仓库为 **“MIAOMIAO”硬件改版**的 Crosses/Bridges 分体键盘提供了官方 ZMK 固件。它原生支持通过 ZMK Studio 进行实时改键，并深度优化了无线连接与功耗。
+本仓库为 **“喵喵喵猫”硬件改版**的 Crosses/Bridges 分体键盘提供了官方 ZMK 固件。它原生支持通过 ZMK Studio 进行实时改键，并深度优化了无线连接与功耗。
 
 ### 该分支适用于 3x5 配列单手轨迹球变体。
 - 3x5 配列双轨迹球无线版本，请使用此库：[zmk-for-crosses35-dual](https://github.com/HeeTuic/zmk-for-crosses35-dual)  
