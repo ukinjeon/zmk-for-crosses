@@ -7,3 +7,5 @@ For the wireless 3x6 layout dual-trackball version, use this library:[zmk-for-cr
 For the wireless 4x6 layout dual-trackball version, use this library:[zmk-for-crosses46-dual](https://github.com/HeeTuic/zmk-for-crosses46-dual)  
 
 Keys are remapped in the browser using the [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/).
+
+![Crosses Keymap](img/crosses.svg)
