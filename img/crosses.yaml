@@ -1,0 +1,150 @@
+layout: {zmk_keyboard: crosses}
+layers:
+  Base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - Enter
+  - {t: Z, h: Mouse}
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: /, h: Mouse}
+  - Ctrl
+  - Shift
+  - {t: Space, h: Lower}
+  - {t: Enter, h: Raise}
+  - BSPC
+  - Alt
+  Lower:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '['
+  - ']'
+  - F1
+  - F2
+  - F3
+  - F4
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - ;
+  - ''''
+  - F5
+  - F6
+  - F7
+  - F8
+  - '9'
+  - '0'
+  - '-'
+  - '='
+  - \
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - Ctrl
+  - Shift
+  - {type: held}
+  - Enter
+  - BSPC
+  - RIGHT WIN
+  Raise:
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - Sft+4
+  - Sft+[
+  - Sft+]
+  - ''
+  - ''
+  - ''
+  - ''
+  - Sft+5
+  - Sft+6
+  - Sft+7
+  - Sft+8
+  - Sft+;
+  - Sft+'
+  - ''
+  - UP ARROW
+  - ''
+  - ''
+  - Sft+9
+  - Sft+0
+  - Sft+-
+  - Sft+=
+  - Sft+\
+  - ''
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - ''
+  - Ctrl
+  - Shift
+  - Space
+  - {type: held}
+  - BSPC
+  - Alt
+  Mouse:
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '3'}
+  - ''
+  - BT CLR
+  - BT CLR
+  - ''
+  - {t: BT, h: '2'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '0'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&studio_unlock'
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - '&mkp MCLK'
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp RCLK'
+  - '&mkp LCLK'
+  - '&mkp MCLK'
