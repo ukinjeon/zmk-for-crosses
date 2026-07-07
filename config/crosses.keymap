@@ -12,7 +12,13 @@
 #define MOUSE 5
 
 &lt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <150>;
+    flavor = "balanced";
+    quick-tap-ms = <150>;
+};
+
+&mt {
+    tapping-term-ms = <150>;
     flavor = "balanced";
     quick-tap-ms = <150>;
 };
@@ -37,7 +43,7 @@
         Custom {
             bindings = <
 &kp SQT        &kp B       &kp H       &kp G       &kp LS(SQT)       &kp SLASH       &kp COMMA      &kp DOT       &kp J       &kp X
-&mt MOD_LGUI C &mt MOD_LALT S &mt MOD_LCTL N &mt MOD_LSFT T &lt MOUSE K &lt FUN SEMICOLON &mt MOD_RSFT A &mt MOD_RCTL E &mt MOD_RALT I &mt MOD_RGUI M
+&mt LGUI C     &mt LALT S  &mt LCTL N  &mt LSFT T  &lt MOUSE K       &lt FUN SEMICOLON &mt RSFT A     &mt RCTL E    &mt RALT I    &mt RGUI M
 &kp EQUAL      &kp F       &kp L       &kp D       &kp V             &kp MINUS       &kp U          &kp O         &kp Y       &kp W
                            &kp ESCAPE  &lt NUM R    &lt NAV TAB        &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
             >;
@@ -46,7 +52,7 @@
         Qwerty {
             bindings = <
 &kp Q          &kp W       &kp E       &kp R       &kp T             &kp Y           &kp U          &kp I         &kp O       &kp P
-&mt MOD_LGUI A &mt MOD_LALT S &mt MOD_LCTL D &mt MOD_LSFT F &lt MOUSE G &lt FUN H        &mt MOD_RSFT J &mt MOD_RCTL K &mt MOD_RALT L &mt MOD_RGUI SEMICOLON
+&mt LGUI A     &mt LALT S  &mt LCTL D  &mt LSFT F  &lt MOUSE G       &lt FUN H        &mt RSFT J     &mt RCTL K    &mt RALT L    &mt RGUI SEMICOLON
 &kp Z          &kp X       &kp C       &kp V       &kp B             &kp N           &kp M          &kp COMMA     &kp DOT     &kp SLASH
                            &kp ESCAPE  &lt NUM R    &lt NAV TAB        &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
             >;
@@ -88,6 +94,101 @@
             >;
         };
 
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        combo_custom_snt_enter {
+            timeout-ms = <50>;
+            key-positions = <11 12 13>;
+            layers = <CUSTOM>;
+            bindings = <&kp ENTER>;
+        };
+
+        combo_qwerty_sdf_enter {
+            timeout-ms = <50>;
+            key-positions = <11 12 13>;
+            layers = <QWERTY>;
+            bindings = <&kp ENTER>;
+        };
+
+        combo_custom_bh_w {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            layers = <CUSTOM>;
+            bindings = <&kp W>;
+        };
+
+        combo_custom_fl_x {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            layers = <CUSTOM>;
+            bindings = <&kp X>;
+        };
+
+        combo_custom_ld_p {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            layers = <CUSTOM>;
+            bindings = <&kp P>;
+        };
+
+        combo_custom_hg_q {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            layers = <CUSTOM>;
+            bindings = <&kp Q>;
+        };
+
+        combo_custom_cs_z {
+            timeout-ms = <50>;
+            key-positions = <10 11>;
+            layers = <CUSTOM>;
+            bindings = <&kp Z>;
+        };
+
+        combo_num_12_0 {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            layers = <NUM>;
+            bindings = <&kp NUMBER_0>;
+        };
+
+        combo_num_23_dot {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            layers = <NUM>;
+            bindings = <&kp DOT>;
+        };
+
+        combo_num_45_minus {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            layers = <NUM>;
+            bindings = <&kp MINUS>;
+        };
+
+        combo_num_56_plus {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            layers = <NUM>;
+            bindings = <&kp LS(EQUAL)>;
+        };
+
+        combo_num_78_slash {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            layers = <NUM>;
+            bindings = <&kp SLASH>;
+        };
+
+        combo_num_89_asterisk {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            layers = <NUM>;
+            bindings = <&kp LS(NUMBER_8)>;
+        };
     };
  
 };
