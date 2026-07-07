@@ -1,6 +1,43 @@
 layout: {zmk_keyboard: crosses}
 layers:
-  Base:
+  Custom:
+  - ''''
+  - B
+  - H
+  - G
+  - Sft+'
+  - /
+  - ','
+  - .
+  - J
+  - X
+  - {t: C, h: MOD LGUI}
+  - {t: S, h: MOD LALT}
+  - {t: N, h: MOD LCTL}
+  - {t: T, h: MOD LSFT}
+  - {t: K, h: Mouse}
+  - {t: ;, h: Fun}
+  - {t: A, h: MOD RSFT}
+  - {t: E, h: MOD RCTL}
+  - {t: I, h: MOD RALT}
+  - {t: M, h: MOD RGUI}
+  - '='
+  - F
+  - L
+  - D
+  - V
+  - '-'
+  - U
+  - O
+  - Y
+  - W
+  - ESC
+  - {t: R, h: Num}
+  - {t: Tab, h: Nav}
+  - {t: Shift, h: Fun}
+  - {t: Space, h: Mouse}
+  - BSPC
+  Qwerty:
   - Q
   - W
   - E
@@ -11,17 +48,17 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - Enter
-  - {t: Z, h: Mouse}
+  - {t: A, h: MOD LGUI}
+  - {t: S, h: MOD LALT}
+  - {t: D, h: MOD LCTL}
+  - {t: F, h: MOD LSFT}
+  - {t: G, h: Mouse}
+  - {t: H, h: Fun}
+  - {t: J, h: MOD RSFT}
+  - {t: K, h: MOD RCTL}
+  - {t: L, h: MOD RALT}
+  - {t: ;, h: MOD RGUI}
+  - Z
   - X
   - C
   - V
@@ -30,109 +67,146 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: Mouse}
-  - Ctrl
-  - Shift
-  - {t: Space, h: Lower}
-  - {t: Enter, h: Raise}
+  - /
+  - ESC
+  - {t: R, h: Num}
+  - {t: Tab, h: Nav}
+  - {t: Shift, h: Fun}
+  - {t: Space, h: Mouse}
   - BSPC
-  - Alt
-  Lower:
+  Num:
+  - '['
+  - '7'
+  - '8'
+  - '9'
+  - ']'
+  - ''
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - ''
+  - Sft+[
+  - '4'
+  - '5'
+  - '6'
+  - Sft+]
+  - '`'
+  - Sft+4
+  - Sft+5
+  - Sft+6
+  - \
+  - Sft+9
   - '1'
   - '2'
   - '3'
-  - '4'
-  - '['
-  - ']'
-  - F1
-  - F2
-  - F3
-  - F4
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - ;
-  - ''''
-  - F5
-  - F6
-  - F7
-  - F8
-  - '9'
-  - '0'
-  - '-'
-  - '='
-  - \
-  - ''
-  - F9
-  - F10
-  - F11
-  - F12
-  - Ctrl
-  - Shift
-  - {type: held}
-  - Enter
-  - BSPC
-  - RIGHT WIN
-  Raise:
+  - Sft+0
+  - Sft+`
   - Sft+1
   - Sft+2
   - Sft+3
-  - Sft+4
-  - Sft+[
-  - Sft+]
-  - ''
-  - ''
-  - ''
-  - ''
-  - Sft+5
-  - Sft+6
-  - Sft+7
-  - Sft+8
-  - Sft+;
-  - Sft+'
-  - ''
-  - UP ARROW
-  - ''
-  - ''
-  - Sft+9
-  - Sft+0
-  - Sft+-
-  - Sft+=
   - Sft+\
   - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  Nav:
+  - Ctl+Q
+  - Ctl+W
+  - Gui+E
+  - Ctl+R
+  - Ctl+T
+  - CAPSLOCK
+  - DEL
+  - INSERT
+  - PRINTSCREEN
+  - PAUSE BREAK
+  - Ctl+A
+  - Ctl+S
+  - Gui+D
+  - Ctl+F
+  - Gui+G
+  - PgUp
   - LEFT ARROW
   - DOWN ARROW
+  - UP ARROW
   - RIGHT ARROW
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Gui+B
+  - PgDn
   - ''
-  - Ctrl
-  - Shift
-  - Space
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - BSPC
-  - Alt
+  - Home
+  - End
+  - ''
+  Fun:
+  - ''
+  - F7
+  - F8
+  - F9
+  - F12
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F4
+  - F5
+  - F6
+  - F11
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - F10
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   Mouse:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
-  - {t: BT, h: '3'}
-  - ''
-  - BT CLR
-  - BT CLR
-  - ''
   - {t: BT, h: '2'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '0'}
+  - {t: BT, h: '3'}
+  - BT CLR
+  - BT CLR
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&df 1'
+  - '&df'
   - ''
   - ''
   - ''
   - ''
   - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - Alt
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
