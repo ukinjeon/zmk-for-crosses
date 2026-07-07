@@ -194,8 +194,8 @@ layers:
   - BT CLR
   - ''
   - ''
-  - '&df 1'
-  - '&df'
+  - {t: Qwerty, h: toggle}
+  - {t: Custom, h: toggle}
   - ''
   - ''
   - ''
