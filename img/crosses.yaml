@@ -192,8 +192,8 @@ layers:
   - {t: BT, h: '3'}
   - BT CLR
   - BT CLR
-  - ''
-  - ''
+  - '&bootloader'
+  - '&reset'
   - {t: Qwerty, h: toggle}
   - {t: Custom, h: toggle}
   - ''
