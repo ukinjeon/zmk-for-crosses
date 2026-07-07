@@ -11,16 +11,16 @@ layers:
   - .
   - J
   - X
-  - {t: C, h: MOD LGUI}
-  - {t: S, h: MOD LALT}
-  - {t: N, h: MOD LCTL}
-  - {t: T, h: MOD LSFT}
+  - {t: C, h: Cmd}
+  - {t: S, h: Alt}
+  - {t: N, h: LCTL}
+  - {t: T, h: LSFT}
   - {t: K, h: Mouse}
   - {t: ;, h: Fun}
-  - {t: A, h: MOD RSFT}
-  - {t: E, h: MOD RCTL}
-  - {t: I, h: MOD RALT}
-  - {t: M, h: MOD RGUI}
+  - {t: A, h: RSFT}
+  - {t: E, h: RCTL}
+  - {t: I, h: Alt}
+  - {t: M, h: Cmd}
   - '='
   - F
   - L
@@ -48,16 +48,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: MOD LGUI}
-  - {t: S, h: MOD LALT}
-  - {t: D, h: MOD LCTL}
-  - {t: F, h: MOD LSFT}
+  - {t: A, h: Cmd}
+  - {t: S, h: Alt}
+  - {t: D, h: LCTL}
+  - {t: F, h: LSFT}
   - {t: G, h: Mouse}
   - {t: H, h: Fun}
-  - {t: J, h: MOD RSFT}
-  - {t: K, h: MOD RCTL}
-  - {t: L, h: MOD RALT}
-  - {t: ;, h: MOD RGUI}
+  - {t: J, h: RSFT}
+  - {t: K, h: RCTL}
+  - {t: L, h: Alt}
+  - {t: ;, h: Cmd}
   - Z
   - X
   - C
@@ -222,3 +222,43 @@ layers:
   - '&mkp RCLK'
   - '&mkp LCLK'
   - '&mkp MCLK'
+combos:
+- p: [11, 12, 13]
+  k: Enter
+  l: [Custom]
+- p: [11, 12, 13]
+  k: Enter
+  l: [Qwerty]
+- p: [1, 2]
+  k: W
+  l: [Custom]
+- p: [21, 22]
+  k: X
+  l: [Custom]
+- p: [22, 23]
+  k: P
+  l: [Custom]
+- p: [2, 3]
+  k: Q
+  l: [Custom]
+- p: [10, 11]
+  k: Z
+  l: [Custom]
+- p: [21, 22]
+  k: '0'
+  l: [Num]
+- p: [22, 23]
+  k: .
+  l: [Num]
+- p: [11, 12]
+  k: '-'
+  l: [Num]
+- p: [12, 13]
+  k: Sft+=
+  l: [Num]
+- p: [1, 2]
+  k: /
+  l: [Num]
+- p: [2, 3]
+  k: Sft+8
+  l: [Num]
