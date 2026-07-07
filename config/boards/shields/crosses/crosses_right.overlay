@@ -56,9 +56,9 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        scroll-layers = <1>;
-        snipe-layers = <2>;
-      	automouse-layer = <3>;
+        scroll-layers = <5>;
+        snipe-layers = <4>;
+        automouse-layer = <5>;
     };
 };
 
@@ -72,4 +72,3 @@
         device = <&trackball>;
     };
 };
-
