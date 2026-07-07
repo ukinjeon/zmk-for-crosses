@@ -1,4 +1,3 @@
-layout: {zmk_keyboard: crosses, layout_name: gggw_crosses_36_layout}
 layers:
   Custom:
   - ''''
@@ -13,12 +12,12 @@ layers:
   - X
   - {t: C, h: Cmd}
   - {t: S, h: Alt}
-  - {t: N, h: LCTL}
-  - {t: T, h: LSFT}
+  - {t: N, h: Ctrl}
+  - {t: T, h: Shift}
   - {t: K, h: Mouse}
   - {t: ;, h: Fun}
-  - {t: A, h: RSFT}
-  - {t: E, h: RCTL}
+  - {t: A, h: Shift}
+  - {t: E, h: Ctrl}
   - {t: I, h: Alt}
   - {t: M, h: Cmd}
   - '='
@@ -50,12 +49,12 @@ layers:
   - P
   - {t: A, h: Cmd}
   - {t: S, h: Alt}
-  - {t: D, h: LCTL}
-  - {t: F, h: LSFT}
+  - {t: D, h: Ctrl}
+  - {t: F, h: Shift}
   - {t: G, h: Mouse}
   - {t: H, h: Fun}
-  - {t: J, h: RSFT}
-  - {t: K, h: RCTL}
+  - {t: J, h: Shift}
+  - {t: K, h: Ctrl}
   - {t: L, h: Alt}
   - {t: ;, h: Cmd}
   - Z
@@ -128,10 +127,10 @@ layers:
   - Ctl+F
   - Gui+G
   - PgUp
-  - LEFT ARROW
-  - DOWN ARROW
-  - UP ARROW
-  - RIGHT ARROW
+  - ←
+  - ↓
+  - ↑
+  - →
   - Ctl+Z
   - Ctl+X
   - Ctl+C
@@ -192,8 +191,8 @@ layers:
   - {t: BT, h: '3'}
   - BT CLR
   - BT CLR
-  - '&bootloader'
-  - '&sys_reset'
+  - Boot
+  - Reset
   - {t: Qwerty, h: toggle}
   - {t: Custom, h: toggle}
   - ''
@@ -202,26 +201,26 @@ layers:
   - ''
   - {type: held}
   - ''
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
+  - Mouse ←
+  - Mouse ↓
+  - Mouse ↑
+  - Mouse →
   - {t: ▽, type: trans}
   - ''
   - ''
   - ''
   - ''
-  - '&studio_unlock'
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
-  - '&msc SCRL_RIGHT'
-  - '&mkp MCLK'
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp RCLK'
-  - '&mkp LCLK'
-  - '&mkp MCLK'
+  - Studio
+  - Scroll ←
+  - Scroll ↓
+  - Scroll ↑
+  - Scroll →
+  - Mid Click
+  - Left Click
+  - Right Click
+  - Right Click
+  - Left Click
+  - Mid Click
 combos:
 - p: [11, 12, 13]
   k: Enter

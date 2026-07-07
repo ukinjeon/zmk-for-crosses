@@ -17,3 +17,4 @@ jobs:
       keymap_patterns: "config/crosses.keymap"
       output_folder: "img"  
       config_path: "keymap_drawer.config.yaml"
+      install_version: "0.20.0"

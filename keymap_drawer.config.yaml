@@ -25,6 +25,21 @@ draw_config:
     text.layer-label { fill: #7ccdfd; font-weight: bold; }
 
 parse_config:
+  raw_binding_map:
+    "&bootloader": "Boot"
+    "&sys_reset": "Reset"
+    "&studio_unlock": "Studio"
+    "&mmv MOVE_LEFT": "Mouse ←"
+    "&mmv MOVE_DOWN": "Mouse ↓"
+    "&mmv MOVE_UP": "Mouse ↑"
+    "&mmv MOVE_RIGHT": "Mouse →"
+    "&msc SCRL_LEFT": "Scroll ←"
+    "&msc SCRL_DOWN": "Scroll ↓"
+    "&msc SCRL_UP": "Scroll ↑"
+    "&msc SCRL_RIGHT": "Scroll →"
+    "&mkp MCLK": "Mid Click"
+    "&mkp LCLK": "Left Click"
+    "&mkp RCLK": "Right Click"
   
   zmk_keycode_map:
     EXCLAMATION: '!'
@@ -100,12 +115,16 @@ parse_config:
     
     LEFT_CONTROL: 'Ctrl'
     LCTRL: 'Ctrl'
+    LCTL: 'Ctrl'
     RIGHT_CONTROL: 'Ctrl'
     RCTRL: 'Ctrl'
+    RCTL: 'Ctrl'
     LEFT_SHIFT: 'Shift'
     LSHIFT: 'Shift'
+    LSFT: 'Shift'
     RIGHT_SHIFT: 'Shift'
     RSHIFT: 'Shift'
+    RSFT: 'Shift'
     LEFT_ALT: 'Alt'
     LALT: 'Alt'
     RIGHT_ALT: 'Alt'
@@ -120,6 +139,10 @@ parse_config:
     DOWN: '↓'
     LEFT: '←'
     RIGHT: '→'
+    UP_ARROW: '↑'
+    DOWN_ARROW: '↓'
+    LEFT_ARROW: '←'
+    RIGHT_ARROW: '→'
     HOME: 'Home'
     END: 'End'
     PAGE_UP: 'PgUp'
