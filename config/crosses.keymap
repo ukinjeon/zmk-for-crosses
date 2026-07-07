@@ -23,6 +23,14 @@
     quick-tap-ms = <150>;
 };
 
+&trackball_peripheral_split {
+    input-processors
+        = <&zip_xy_to_scroll_mapper>
+        , <&zip_scroll_scaler 1 4>
+        , <&zip_ble_report_rate_limit>
+        ;
+};
+
 / {
     chosen { zmk,physical-layout = &gggw_crosses_36_layout; };
 
