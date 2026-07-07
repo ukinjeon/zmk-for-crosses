@@ -18,6 +18,7 @@
 };
 
 / {
+    chosen { zmk,physical-layout = &gggw_crosses_36_layout; };
 
     behaviors {
         td_r1: td_r1 {
