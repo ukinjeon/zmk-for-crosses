@@ -73,6 +73,80 @@ layers:
   - {t: Shift, h: Fun}
   - {t: Space, h: Mouse}
   - BSPC
+  HybridEn:
+  - ''''
+  - B
+  - H
+  - G
+  - Sft+'
+  - /
+  - ','
+  - .
+  - J
+  - X
+  - {t: C, h: Cmd}
+  - {t: S, h: Alt}
+  - {t: N, h: Ctrl}
+  - {t: T, h: Shift}
+  - {t: K, h: Mouse}
+  - {t: ;, h: Fun}
+  - {t: A, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: M, h: Cmd}
+  - '='
+  - F
+  - L
+  - D
+  - V
+  - KO mode
+  - U
+  - O
+  - Y
+  - W
+  - ESC
+  - {t: R, h: Num}
+  - {t: Tab, h: Nav}
+  - {t: Shift, h: Fun}
+  - {t: Space, h: Mouse}
+  - BSPC
+  SvalKo:
+  - ㅊ
+  - ㅍ
+  - ㅋ
+  - ㅌ
+  - {t: ㄷ, s: ㄸ}
+  - ''''
+  - ','
+  - .
+  - /
+  - ;
+  - {t: ㅎ, h: Cmd}
+  - {t: ㄴ, h: Alt}
+  - {t: ㅇ, h: Ctrl}
+  - {t: ㄱ, h: Shift, s: ㄲ}
+  - {t: ㅅ, h: Mouse, s: ㅆ}
+  - {t: ㅐ, h: Fun, s: ㅒ}
+  - {t: ㅣ, h: Shift}
+  - {t: ㅡ, h: Ctrl}
+  - {t: ㅏ, s: ㅑ}
+  - {t: ㅗ, s: ㅛ}
+  - ㅁ
+  - ㄹ
+  - {t: ㅂ, s: ㅃ}
+  - {t: ㅈ, s: ㅉ}
+  - '='
+  - EN mode
+  - {t: ㅔ, s: ㅖ}
+  - {t: ㅓ, s: ㅕ}
+  - {t: ㅜ, s: ㅠ}
+  - '-'
+  - ESC
+  - {t: ㄱ, h: Num, s: ㄲ}
+  - {t: Tab, h: Nav}
+  - {t: Shift, h: Fun}
+  - {t: Space, h: Mouse}
+  - BSPC
   Num:
   - '['
   - '7'
@@ -195,8 +269,8 @@ layers:
   - Reset
   - {t: Qwerty, h: toggle}
   - {t: Custom, h: toggle}
-  - ''
-  - ''
+  - {t: HybridEn, h: toggle}
+  - Alt
   - ''
   - ''
   - {type: held}
@@ -224,25 +298,25 @@ layers:
 combos:
 - p: [11, 12, 13]
   k: Enter
-  l: [Custom]
+  l: [Custom, HybridEn]
 - p: [11, 12, 13]
   k: Enter
   l: [Qwerty]
 - p: [1, 2]
   k: W
-  l: [Custom]
+  l: [Custom, HybridEn]
 - p: [21, 22]
   k: X
-  l: [Custom]
+  l: [Custom, HybridEn]
 - p: [22, 23]
   k: P
-  l: [Custom]
+  l: [Custom, HybridEn]
 - p: [2, 3]
   k: Q
-  l: [Custom]
+  l: [Custom, HybridEn]
 - p: [10, 11]
   k: Z
-  l: [Custom]
+  l: [Custom, HybridEn]
 - p: [21, 22]
   k: '0'
   l: [Num]

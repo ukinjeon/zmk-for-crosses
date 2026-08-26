@@ -6,10 +6,12 @@
 
 #define CUSTOM 0
 #define QWERTY 1
-#define NUM 2
-#define NAV 3
-#define FUN 4
-#define MOUSE 5
+#define HYBRID 2
+#define SVAL_KO 3
+#define NUM 4
+#define NAV 5
+#define FUN 6
+#define MOUSE 7
 
 &lt {
     tapping-term-ms = <150>;
@@ -42,6 +44,82 @@
             flavor = "balanced";
             bindings = <&mo>, <&sk>;
         };
+
+        ko_kp: ko_kp {
+            compatible = "zmk,behavior-key-press";
+            label = "KO_KEY_PRESS";
+            #binding-cells = <1>;
+        };
+
+        ko_mt: ko_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KO_MOD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        ko_lt: ko_lt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KO_LAYER_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&mo>, <&kp>;
+        };
+
+        lang_to_ko: lang_to_ko {
+            compatible = "zmk,behavior-macro";
+            label = "LANG_TO_KO";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_tap &kp RALT>, <&macro_tap &to SVAL_KO>;
+        };
+
+        lang_to_en: lang_to_en {
+            compatible = "zmk,behavior-macro";
+            label = "LANG_TO_EN";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_tap &kp RALT>, <&macro_tap &to HYBRID>;
+        };
+
+        ko_yeo: ko_yeo {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KO_YEO";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp U>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ko_ya: ko_ya {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KO_YA";
+            #binding-cells = <0>;
+            bindings = <&kp K>, <&kp I>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ko_yu: ko_yu {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KO_YU";
+            #binding-cells = <0>;
+            bindings = <&kp N>, <&kp B>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ko_yo: ko_yo {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KO_YO";
+            #binding-cells = <0>;
+            bindings = <&kp H>, <&kp Y>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -62,6 +140,24 @@
 &mt LGUI A     &mt LALT S  &mt LCTL D  &mt LSFT F  &lt MOUSE G       &lt FUN H        &mt RSFT J     &mt RCTL K    &mt RALT L    &mt RGUI SEMICOLON
 &kp Z          &kp X       &kp C       &kp V       &kp B             &kp N           &kp M          &kp COMMA     &kp DOT     &kp SLASH
                            &kp ESCAPE  &lt NUM R    &lt NAV TAB        &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
+            >;
+        };
+
+        HybridEn {
+            bindings = <
+&kp SQT        &kp B       &kp H       &kp G       &kp LS(SQT)       &kp SLASH       &kp COMMA      &kp DOT       &kp J       &kp X
+&mt LGUI C     &mt LALT S  &mt LCTL N  &mt LSFT T  &lt MOUSE K       &lt FUN SEMICOLON &mt RSFT A     &mt RCTL E    &mt RALT I    &mt RGUI M
+&kp EQUAL      &kp F       &kp L       &kp D       &kp V             &lang_to_ko    &kp U          &kp O         &kp Y       &kp W
+                           &kp ESCAPE  &lt NUM R    &lt NAV TAB        &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
+            >;
+        };
+
+        SvalKo {
+            bindings = <
+&ko_kp C          &ko_kp V       &ko_kp Z       &ko_kp X       &ko_kp E             &kp SQT        &kp COMMA      &kp DOT       &kp SLASH  &kp SEMICOLON
+&ko_mt LGUI G     &ko_mt LALT S  &ko_mt LCTL D  &ko_mt LSFT R  &ko_lt MOUSE T       &ko_lt FUN O   &ko_mt RSFT L  &ko_mt RCTL M &ko_ya     &ko_yo
+&ko_kp A          &ko_kp F       &ko_kp Q       &ko_kp W       &kp EQUAL            &lang_to_en    &ko_kp P       &ko_yeo       &ko_yu     &kp MINUS
+                              &kp ESCAPE     &ko_lt NUM R   &lt NAV TAB          &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
             >;
         };
 
@@ -95,7 +191,7 @@
         Mouse {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR      &bt BT_CLR      &bootloader &sys_reset &to QWERTY  &to CUSTOM
-&none         &none         &none         &none         &none           &none           &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
+&to HYBRID    &kp RALT      &none         &none         &none           &none           &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
 &trans        &none         &none         &none         &none           &studio_unlock  &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT
                             &mkp MCLK     &mkp LCLK     &mkp RCLK       &mkp RCLK       &mkp LCLK  &mkp MCLK
             >;
@@ -109,7 +205,7 @@
         combo_custom_snt_enter {
             timeout-ms = <50>;
             key-positions = <11 12 13>;
-            layers = <CUSTOM>;
+            layers = <CUSTOM HYBRID>;
             bindings = <&kp ENTER>;
         };
 
@@ -123,35 +219,35 @@
         combo_custom_bh_w {
             timeout-ms = <50>;
             key-positions = <1 2>;
-            layers = <CUSTOM>;
+            layers = <CUSTOM HYBRID>;
             bindings = <&kp W>;
         };
 
         combo_custom_fl_x {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            layers = <CUSTOM>;
+            layers = <CUSTOM HYBRID>;
             bindings = <&kp X>;
         };
 
         combo_custom_ld_p {
             timeout-ms = <50>;
             key-positions = <22 23>;
-            layers = <CUSTOM>;
+            layers = <CUSTOM HYBRID>;
             bindings = <&kp P>;
         };
 
         combo_custom_hg_q {
             timeout-ms = <50>;
             key-positions = <2 3>;
-            layers = <CUSTOM>;
+            layers = <CUSTOM HYBRID>;
             bindings = <&kp Q>;
         };
 
         combo_custom_cs_z {
             timeout-ms = <50>;
             key-positions = <10 11>;
-            layers = <CUSTOM>;
+            layers = <CUSTOM HYBRID>;
             bindings = <&kp Z>;
         };
 
