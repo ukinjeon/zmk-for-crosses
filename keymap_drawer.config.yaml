@@ -40,31 +40,31 @@ parse_config:
     "&mkp MCLK": "Mid Click"
     "&mkp LCLK": "Left Click"
     "&mkp RCLK": "Right Click"
-    "&lang_to_ko": "KO mode"
-    "&lang_to_en": "EN mode"
-    "&ko_kp C": "ㅊ"
+    "&lang_to_ko": "한글+KO"
+    "&lang_to_en": "영문+EN"
+    "&kp LC(SPACE)": "한/영"
     "&ko_kp V": "ㅍ"
     "&ko_kp Z": "ㅋ"
     "&ko_kp X": "ㅌ"
-    "&ko_kp E": {t: "ㄷ", s: "ㄸ"}
     "&ko_kp A": "ㅁ"
+    "&ko_kp C": "ㅊ"
     "&ko_kp F": "ㄹ"
     "&ko_kp Q": {t: "ㅂ", s: "ㅃ"}
     "&ko_kp W": {t: "ㅈ", s: "ㅉ"}
-    "&ko_kp P": {t: "ㅔ", s: "ㅖ"}
+    "&ko_kp O": {t: "ㅐ", s: "ㅒ"}
     "&ko_mt LGUI G": {t: "ㅎ", h: "Cmd"}
     "&ko_mt LALT S": {t: "ㄴ", h: "Alt"}
     "&ko_mt LCTL D": {t: "ㅇ", h: "Ctrl"}
-    "&ko_mt LSFT R": {t: "ㄱ", h: "Shift", s: "ㄲ"}
+    "&ko_mt LSFT E": {t: "ㄷ", h: "Shift", s: "ㄸ"}
     "&ko_lt MOUSE T": {t: "ㅅ", h: "Mouse", s: "ㅆ"}
-    "&ko_lt FUN O": {t: "ㅐ", h: "Fun", s: "ㅒ"}
+    "&ko_lt MOUSE P": {t: "ㅔ", h: "Mouse", s: "ㅖ"}
     "&ko_mt RSFT L": {t: "ㅣ", h: "Shift"}
     "&ko_mt RCTL M": {t: "ㅡ", h: "Ctrl"}
+    "&ko_ya_mt RALT 0": {t: "ㅏ", h: "Alt", s: "ㅑ"}
+    "&ko_yo_mt RGUI 0": {t: "ㅗ", h: "Cmd", s: "ㅛ"}
     "&ko_lt NUM R": {t: "ㄱ", h: "Num", s: "ㄲ"}
     "&ko_yeo": {t: "ㅓ", s: "ㅕ"}
-    "&ko_ya": {t: "ㅏ", s: "ㅑ"}
     "&ko_yu": {t: "ㅜ", s: "ㅠ"}
-    "&ko_yo": {t: "ㅗ", s: "ㅛ"}
   
   zmk_keycode_map:
     EXCLAMATION: '!'

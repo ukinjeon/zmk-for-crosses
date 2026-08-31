@@ -77,7 +77,7 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_tap &kp RALT>, <&macro_tap &to SVAL_KO>;
+            bindings = <&macro_tap &kp LC(SPACE)>, <&macro_tap &to SVAL_KO>;
         };
 
         lang_to_en: lang_to_en {
@@ -86,7 +86,7 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_tap &kp RALT>, <&macro_tap &to HYBRID>;
+            bindings = <&macro_tap &kp LC(SPACE)>, <&macro_tap &to HYBRID>;
         };
 
         ko_yeo: ko_yeo {
@@ -120,6 +120,26 @@
             bindings = <&kp H>, <&kp Y>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        ko_ya_mt: ko_ya_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KO_YA_MOD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&ko_ya>;
+        };
+
+        ko_yo_mt: ko_yo_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KO_YO_MOD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&ko_yo>;
+        };
     };
 
     keymap {
@@ -145,19 +165,19 @@
 
         HybridEn {
             bindings = <
-&kp SQT        &kp B       &kp H       &kp G       &kp LS(SQT)       &kp SLASH       &kp COMMA      &kp DOT       &kp J       &kp X
-&mt LGUI C     &mt LALT S  &mt LCTL N  &mt LSFT T  &lt MOUSE K       &lt FUN SEMICOLON &mt RSFT A     &mt RCTL E    &mt RALT I    &mt RGUI M
-&kp EQUAL      &kp F       &kp L       &kp D       &kp V             &lang_to_ko    &kp U          &kp O         &kp Y       &kp W
+&kp SQT        &kp B       &kp H       &kp G       &kp LS(SQT)       &kp SLASH       &kp DOT        &kp COMMA     &kp SEMICOLON &kp BACKSLASH
+&mt LGUI C     &mt LALT S  &mt LCTL N  &mt LSFT T  &lt MOUSE K       &lt MOUSE W      &mt RSFT A     &mt RCTL E    &mt RALT I    &mt RGUI M
+&kp EQUAL      &kp F       &kp L       &kp D       &kp V             &kp MINUS       &kp U          &kp O         &kp Y       &kp J
                            &kp ESCAPE  &lt NUM R    &lt NAV TAB        &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
             >;
         };
 
         SvalKo {
             bindings = <
-&ko_kp C          &ko_kp V       &ko_kp Z       &ko_kp X       &ko_kp E             &kp SQT        &kp COMMA      &kp DOT       &kp SLASH  &kp SEMICOLON
-&ko_mt LGUI G     &ko_mt LALT S  &ko_mt LCTL D  &ko_mt LSFT R  &ko_lt MOUSE T       &ko_lt FUN O   &ko_mt RSFT L  &ko_mt RCTL M &ko_ya     &ko_yo
-&ko_kp A          &ko_kp F       &ko_kp Q       &ko_kp W       &kp EQUAL            &lang_to_en    &ko_kp P       &ko_yeo       &ko_yu     &kp MINUS
-                              &kp ESCAPE     &ko_lt NUM R   &lt NAV TAB          &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
+&kp SQT           &ko_kp V       &ko_kp Z       &ko_kp A       &kp LS(SQT)           &kp SLASH       &kp DOT        &kp COMMA     &kp SEMICOLON &kp BACKSLASH
+&ko_mt LGUI G     &ko_mt LALT S  &ko_mt LCTL D  &ko_mt LSFT E  &ko_lt MOUSE T       &ko_lt MOUSE P  &ko_mt RSFT L  &ko_mt RCTL M &ko_ya_mt RALT 0 &ko_yo_mt RGUI 0
+&kp EQUAL         &ko_kp F       &ko_kp Q       &ko_kp W       &ko_kp C             &kp MINUS       &ko_kp O       &ko_yeo       &ko_yu        &ko_kp X
+                               &kp ESCAPE     &ko_lt NUM R   &lt NAV TAB          &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
             >;
         };
 
@@ -191,7 +211,7 @@
         Mouse {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR      &bt BT_CLR      &bootloader &sys_reset &to QWERTY  &to CUSTOM
-&to HYBRID    &kp RALT      &none         &none         &none           &none           &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
+&to HYBRID    &kp LC(SPACE) &to SVAL_KO   &none         &none           &none           &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
 &trans        &none         &none         &none         &none           &studio_unlock  &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT
                             &mkp MCLK     &mkp LCLK     &mkp RCLK       &mkp RCLK       &mkp LCLK  &mkp MCLK
             >;
@@ -249,6 +269,62 @@
             key-positions = <10 11>;
             layers = <CUSTOM HYBRID>;
             bindings = <&kp Z>;
+        };
+
+        combo_ko_pk_ch {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            layers = <SVAL_KO>;
+            bindings = <&kp C>;
+        };
+
+        combo_ko_km_t {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            layers = <SVAL_KO>;
+            bindings = <&kp X>;
+        };
+
+        combo_ko_nod_enter {
+            timeout-ms = <50>;
+            key-positions = <11 12 13>;
+            layers = <SVAL_KO>;
+            bindings = <&kp ENTER>;
+        };
+
+        combo_hybrid_lang_to_ko {
+            timeout-ms = <70>;
+            key-positions = <30 35>;
+            layers = <HYBRID>;
+            bindings = <&lang_to_ko>;
+        };
+
+        combo_sval_lang_to_en {
+            timeout-ms = <70>;
+            key-positions = <30 35>;
+            layers = <SVAL_KO>;
+            bindings = <&lang_to_en>;
+        };
+
+        combo_os_language_toggle {
+            timeout-ms = <70>;
+            key-positions = <30 34>;
+            layers = <HYBRID SVAL_KO>;
+            bindings = <&kp LC(SPACE)>;
+        };
+
+        combo_hybrid_layer_to_ko {
+            timeout-ms = <70>;
+            key-positions = <32 35>;
+            layers = <HYBRID>;
+            bindings = <&to SVAL_KO>;
+        };
+
+        combo_sval_layer_to_en {
+            timeout-ms = <70>;
+            key-positions = <32 35>;
+            layers = <SVAL_KO>;
+            bindings = <&to HYBRID>;
         };
 
         combo_num_12_0 {
