@@ -80,16 +80,16 @@ layers:
   - G
   - Sft+'
   - /
-  - ','
   - .
-  - J
-  - X
+  - ','
+  - ;
+  - \
   - {t: C, h: Cmd}
   - {t: S, h: Alt}
   - {t: N, h: Ctrl}
   - {t: T, h: Shift}
   - {t: K, h: Mouse}
-  - {t: ;, h: Fun}
+  - {t: W, h: Mouse}
   - {t: A, h: Shift}
   - {t: E, h: Ctrl}
   - {t: I, h: Alt}
@@ -99,11 +99,11 @@ layers:
   - L
   - D
   - V
-  - KO mode
+  - '-'
   - U
   - O
   - Y
-  - W
+  - J
   - ESC
   - {t: R, h: Num}
   - {t: Tab, h: Nav}
@@ -111,36 +111,36 @@ layers:
   - {t: Space, h: Mouse}
   - BSPC
   SvalKo:
-  - ㅊ
+  - ''''
   - ㅍ
   - ㅋ
-  - ㅌ
-  - {t: ㄷ, s: ㄸ}
-  - ''''
-  - ','
-  - .
+  - ㅁ
+  - Sft+'
   - /
+  - .
+  - ','
   - ;
+  - \
   - {t: ㅎ, h: Cmd}
   - {t: ㄴ, h: Alt}
   - {t: ㅇ, h: Ctrl}
-  - {t: ㄱ, h: Shift, s: ㄲ}
+  - {t: ㄷ, h: Shift, s: ㄸ}
   - {t: ㅅ, h: Mouse, s: ㅆ}
-  - {t: ㅐ, h: Fun, s: ㅒ}
+  - {t: ㅔ, h: Mouse, s: ㅖ}
   - {t: ㅣ, h: Shift}
   - {t: ㅡ, h: Ctrl}
-  - {t: ㅏ, s: ㅑ}
-  - {t: ㅗ, s: ㅛ}
-  - ㅁ
+  - {t: ㅏ, h: Alt, s: ㅑ}
+  - {t: ㅗ, h: Cmd, s: ㅛ}
+  - '='
   - ㄹ
   - {t: ㅂ, s: ㅃ}
   - {t: ㅈ, s: ㅉ}
-  - '='
-  - EN mode
-  - {t: ㅔ, s: ㅖ}
+  - ㅊ
+  - '-'
+  - {t: ㅐ, s: ㅒ}
   - {t: ㅓ, s: ㅕ}
   - {t: ㅜ, s: ㅠ}
-  - '-'
+  - ㅌ
   - ESC
   - {t: ㄱ, h: Num, s: ㄲ}
   - {t: Tab, h: Nav}
@@ -270,8 +270,8 @@ layers:
   - {t: Qwerty, h: toggle}
   - {t: Custom, h: toggle}
   - {t: HybridEn, h: toggle}
-  - Alt
-  - ''
+  - 한/영
+  - {t: SvalKo, h: toggle}
   - ''
   - {type: held}
   - ''
@@ -317,6 +317,30 @@ combos:
 - p: [10, 11]
   k: Z
   l: [Custom, HybridEn]
+- p: [1, 2]
+  k: C
+  l: [SvalKo]
+- p: [2, 3]
+  k: X
+  l: [SvalKo]
+- p: [11, 12, 13]
+  k: Enter
+  l: [SvalKo]
+- p: [30, 35]
+  k: 한글+KO
+  l: [HybridEn]
+- p: [30, 35]
+  k: 영문+EN
+  l: [SvalKo]
+- p: [30, 34]
+  k: 한/영
+  l: [HybridEn, SvalKo]
+- p: [32, 35]
+  k: {t: SvalKo, h: toggle}
+  l: [HybridEn]
+- p: [32, 35]
+  k: {t: HybridEn, h: toggle}
+  l: [SvalKo]
 - p: [21, 22]
   k: '0'
   l: [Num]
