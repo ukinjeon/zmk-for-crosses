@@ -112,35 +112,35 @@ layers:
   - BSPC
   SvalKo:
   - ''''
-  - ㅍ
-  - ㅋ
   - ㅁ
+  - {t: ㅂ, s: ㅃ}
+  - ㅊ
   - Sft+'
   - /
   - .
   - ','
   - ;
   - \
-  - {t: ㅎ, h: Cmd}
+  - {t: ㅌ, h: Cmd}
   - {t: ㄴ, h: Alt}
   - {t: ㅇ, h: Ctrl}
-  - {t: ㄷ, h: Shift, s: ㄸ}
+  - {t: ㄹ, h: Shift}
   - {t: ㅅ, h: Mouse, s: ㅆ}
   - {t: ㅔ, h: Mouse, s: ㅖ}
   - {t: ㅣ, h: Shift}
-  - {t: ㅡ, h: Ctrl}
-  - {t: ㅏ, h: Alt, s: ㅑ}
-  - {t: ㅗ, h: Cmd, s: ㅛ}
+  - {t: ㅏ, h: Ctrl, s: ㅑ}
+  - {t: ㅗ, h: Alt, s: ㅛ}
+  - {t: ㅐ, h: Cmd, s: ㅒ}
   - '='
-  - ㄹ
-  - {t: ㅂ, s: ㅃ}
   - {t: ㅈ, s: ㅉ}
-  - ㅊ
+  - {t: ㄷ, s: ㄸ}
+  - ㅎ
+  - ''
   - '-'
-  - {t: ㅐ, s: ㅒ}
   - {t: ㅓ, s: ㅕ}
+  - ㅡ
   - {t: ㅜ, s: ㅠ}
-  - ㅌ
+  - ''
   - ESC
   - {t: ㄱ, h: Num, s: ㄲ}
   - {t: Tab, h: Nav}
@@ -318,10 +318,10 @@ combos:
   k: Z
   l: [Custom, HybridEn]
 - p: [1, 2]
-  k: C
+  k: ㅍ
   l: [SvalKo]
-- p: [2, 3]
-  k: X
+- p: [23, 31]
+  k: ㅋ
   l: [SvalKo]
 - p: [11, 12, 13]
   k: Enter
