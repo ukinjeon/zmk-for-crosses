@@ -45,23 +45,23 @@ parse_config:
     "&kp LC(SPACE)": "한/영"
     "&ko_kp V": "ㅍ"
     "&ko_kp Z": "ㅋ"
-    "&ko_kp X": "ㅌ"
     "&ko_kp A": "ㅁ"
     "&ko_kp C": "ㅊ"
-    "&ko_kp F": "ㄹ"
     "&ko_kp Q": {t: "ㅂ", s: "ㅃ"}
     "&ko_kp W": {t: "ㅈ", s: "ㅉ"}
-    "&ko_kp O": {t: "ㅐ", s: "ㅒ"}
-    "&ko_mt LGUI G": {t: "ㅎ", h: "Cmd"}
+    "&ko_kp E": {t: "ㄷ", s: "ㄸ"}
+    "&ko_kp G": "ㅎ"
+    "&ko_kp M": "ㅡ"
+    "&ko_mt LGUI X": {t: "ㅌ", h: "Cmd"}
     "&ko_mt LALT S": {t: "ㄴ", h: "Alt"}
     "&ko_mt LCTL D": {t: "ㅇ", h: "Ctrl"}
-    "&ko_mt LSFT E": {t: "ㄷ", h: "Shift", s: "ㄸ"}
+    "&ko_mt LSFT F": {t: "ㄹ", h: "Shift"}
     "&ko_lt MOUSE T": {t: "ㅅ", h: "Mouse", s: "ㅆ"}
     "&ko_lt MOUSE P": {t: "ㅔ", h: "Mouse", s: "ㅖ"}
     "&ko_mt RSFT L": {t: "ㅣ", h: "Shift"}
-    "&ko_mt RCTL M": {t: "ㅡ", h: "Ctrl"}
-    "&ko_ya_mt RALT 0": {t: "ㅏ", h: "Alt", s: "ㅑ"}
-    "&ko_yo_mt RGUI 0": {t: "ㅗ", h: "Cmd", s: "ㅛ"}
+    "&ko_ya_mt RCTL 0": {t: "ㅏ", h: "Ctrl", s: "ㅑ"}
+    "&ko_yo_mt RALT 0": {t: "ㅗ", h: "Alt", s: "ㅛ"}
+    "&ko_mt RGUI O": {t: "ㅐ", h: "Cmd", s: "ㅒ"}
     "&ko_lt NUM R": {t: "ㄱ", h: "Num", s: "ㄲ"}
     "&ko_yeo": {t: "ㅓ", s: "ㅕ"}
     "&ko_yu": {t: "ㅜ", s: "ㅠ"}

@@ -174,9 +174,9 @@
 
         SvalKo {
             bindings = <
-&kp SQT           &ko_kp V       &ko_kp Z       &ko_kp A       &kp LS(SQT)           &kp SLASH       &kp DOT        &kp COMMA     &kp SEMICOLON &kp BACKSLASH
-&ko_mt LGUI G     &ko_mt LALT S  &ko_mt LCTL D  &ko_mt LSFT E  &ko_lt MOUSE T       &ko_lt MOUSE P  &ko_mt RSFT L  &ko_mt RCTL M &ko_ya_mt RALT 0 &ko_yo_mt RGUI 0
-&kp EQUAL         &ko_kp F       &ko_kp Q       &ko_kp W       &ko_kp C             &kp MINUS       &ko_kp O       &ko_yeo       &ko_yu        &ko_kp X
+&kp SQT           &ko_kp A       &ko_kp Q       &ko_kp C       &kp LS(SQT)           &kp SLASH       &kp DOT        &kp COMMA       &kp SEMICOLON &kp BACKSLASH
+&ko_mt LGUI X     &ko_mt LALT S  &ko_mt LCTL D  &ko_mt LSFT F  &ko_lt MOUSE T       &ko_lt MOUSE P  &ko_mt RSFT L  &ko_ya_mt RCTL 0 &ko_yo_mt RALT 0 &ko_mt RGUI O
+&kp EQUAL         &ko_kp W       &ko_kp E       &ko_kp G       &none                 &kp MINUS       &ko_yeo       &ko_kp M         &ko_yu          &none
                                &kp ESCAPE     &ko_lt NUM R   &lt NAV TAB          &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
             >;
         };
@@ -271,21 +271,21 @@
             bindings = <&kp Z>;
         };
 
-        combo_ko_pk_ch {
+        combo_ko_mb_p {
             timeout-ms = <50>;
             key-positions = <1 2>;
             layers = <SVAL_KO>;
-            bindings = <&kp C>;
+            bindings = <&ko_kp V>;
         };
 
-        combo_ko_km_t {
+        combo_ko_gh_k {
             timeout-ms = <50>;
-            key-positions = <2 3>;
+            key-positions = <23 31>;
             layers = <SVAL_KO>;
-            bindings = <&kp X>;
+            bindings = <&ko_kp Z>;
         };
 
-        combo_ko_nod_enter {
+        combo_ko_home_enter {
             timeout-ms = <50>;
             key-positions = <11 12 13>;
             layers = <SVAL_KO>;
