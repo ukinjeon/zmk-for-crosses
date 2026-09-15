@@ -688,18 +688,30 @@ path.combo {
 <text x="56" y="84" class="combo tap">Z</text>
 </g>
 <g class="combo combopos-6">
+<rect rx="6" ry="6" x="378" y="15" width="28" height="26" class="combo"/>
+<text x="392" y="28" class="combo tap">
+<tspan x="392" dy="-0.6em">Left</tspan><tspan x="392" dy="1.2em">Click</tspan>
+</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="434" y="15" width="28" height="26" class="combo"/>
+<text x="448" y="28" class="combo tap">
+<tspan x="448" dy="-0.6em">Right</tspan><tspan x="448" dy="1.2em">Click</tspan>
+</text>
+</g>
+<g class="combo combopos-8">
 <path d="M308,196 l-149,0" class="combo"/>
 <path d="M308,196 l149,0" class="combo"/>
 <rect rx="6" ry="6" x="294" y="183" width="28" height="26" class="combo"/>
 <text x="308" y="196" class="combo tap">한글+KO</text>
 </g>
-<g class="combo combopos-7">
+<g class="combo combopos-9">
 <path d="M280,196 l-121,0" class="combo"/>
 <path d="M280,196 l121,0" class="combo"/>
 <rect rx="6" ry="6" x="266" y="183" width="28" height="26" class="combo"/>
 <text x="280" y="196" class="combo tap">한/영</text>
 </g>
-<g class="combo combopos-8">
+<g class="combo combopos-10">
 <path d="M364,196 l-93,0" class="combo"/>
 <path d="M364,196 l93,0" class="combo"/>
 <rect rx="6" ry="6" x="350" y="183" width="28" height="26" class="combo"/>
@@ -789,8 +801,9 @@ path.combo {
 </g>
 <g transform="translate(420, 84)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ㅣ</text>
+<text x="0" y="0" class="key tap">ㅓ</text>
 <text x="0" y="24" class="key hold">Shift</text>
+<text x="0" y="-24" class="key shifted">ㅕ</text>
 </g>
 <g transform="translate(476, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -830,6 +843,7 @@ path.combo {
 </g>
 <g transform="translate(252, 140)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">ㅋ</text>
 </g>
 <g transform="translate(364, 140)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -837,8 +851,7 @@ path.combo {
 </g>
 <g transform="translate(420, 140)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ㅓ</text>
-<text x="0" y="-24" class="key shifted">ㅕ</text>
+<text x="0" y="0" class="key tap">ㅣ</text>
 </g>
 <g transform="translate(476, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -851,6 +864,7 @@ path.combo {
 </g>
 <g transform="translate(588, 140)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">ㅍ</text>
 </g>
 <g transform="translate(140, 196)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -890,28 +904,36 @@ path.combo {
 <text x="112" y="28" class="combo tap">ㅍ</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="182" y="155" width="28" height="26" class="combo"/>
-<text x="196" y="168" class="combo tap">ㅋ</text>
+<rect rx="6" ry="6" x="378" y="15" width="28" height="26" class="combo"/>
+<text x="392" y="28" class="combo tap">
+<tspan x="392" dy="-0.6em">Left</tspan><tspan x="392" dy="1.2em">Click</tspan>
+</text>
 </g>
 <g class="combo combopos-2">
+<rect rx="6" ry="6" x="434" y="15" width="28" height="26" class="combo"/>
+<text x="448" y="28" class="combo tap">
+<tspan x="448" dy="-0.6em">Right</tspan><tspan x="448" dy="1.2em">Click</tspan>
+</text>
+</g>
+<g class="combo combopos-3">
 <path d="M140,84 l-37,0" class="combo"/>
 <path d="M140,84 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="126" y="71" width="28" height="26" class="combo"/>
 <text x="140" y="84" class="combo tap">Enter</text>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-4">
 <path d="M308,196 l-149,0" class="combo"/>
 <path d="M308,196 l149,0" class="combo"/>
 <rect rx="6" ry="6" x="294" y="183" width="28" height="26" class="combo"/>
 <text x="308" y="196" class="combo tap">영문+EN</text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-5">
 <path d="M280,196 l-121,0" class="combo"/>
 <path d="M280,196 l121,0" class="combo"/>
 <rect rx="6" ry="6" x="266" y="183" width="28" height="26" class="combo"/>
 <text x="280" y="196" class="combo tap">한/영</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-6">
 <path d="M364,196 l-93,0" class="combo"/>
 <path d="M364,196 l93,0" class="combo"/>
 <rect rx="6" ry="6" x="350" y="183" width="28" height="26" class="combo"/>

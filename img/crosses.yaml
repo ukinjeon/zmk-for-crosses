@@ -127,7 +127,7 @@ layers:
   - {t: ㄹ, h: Shift}
   - {t: ㅅ, h: Mouse, s: ㅆ}
   - {t: ㅔ, h: Mouse, s: ㅖ}
-  - {t: ㅣ, h: Shift}
+  - {t: ㅓ, h: Shift, s: ㅕ}
   - {t: ㅏ, h: Ctrl, s: ㅑ}
   - {t: ㅗ, h: Alt, s: ㅛ}
   - {t: ㅐ, h: Cmd, s: ㅒ}
@@ -135,12 +135,12 @@ layers:
   - {t: ㅈ, s: ㅉ}
   - {t: ㄷ, s: ㄸ}
   - ㅎ
-  - ''
+  - ㅋ
   - '-'
-  - {t: ㅓ, s: ㅕ}
+  - ㅣ
   - ㅡ
   - {t: ㅜ, s: ㅠ}
-  - ''
+  - ㅍ
   - ESC
   - {t: ㄱ, h: Num, s: ㄲ}
   - {t: Tab, h: Nav}
@@ -320,8 +320,17 @@ combos:
 - p: [1, 2]
   k: ㅍ
   l: [SvalKo]
-- p: [23, 31]
-  k: ㅋ
+- p: [5, 6]
+  k: Left Click
+  l: [HybridEn]
+- p: [6, 7]
+  k: Right Click
+  l: [HybridEn]
+- p: [5, 6]
+  k: Left Click
+  l: [SvalKo]
+- p: [6, 7]
+  k: Right Click
   l: [SvalKo]
 - p: [11, 12, 13]
   k: Enter
