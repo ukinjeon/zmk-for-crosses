@@ -288,31 +288,17 @@
             bindings = <&ko_kp V>;
         };
 
-        combo_hybrid_slash_dot_left_click {
+        combo_hybrid_sval_home_left_click {
             timeout-ms = <50>;
-            key-positions = <5 6>;
-            layers = <HYBRID>;
+            key-positions = <16 17>;
+            layers = <HYBRID SVAL_KO>;
             bindings = <&mkp LCLK>;
         };
 
-        combo_hybrid_dot_comma_right_click {
+        combo_hybrid_sval_home_right_click {
             timeout-ms = <50>;
-            key-positions = <6 7>;
-            layers = <HYBRID>;
-            bindings = <&mkp RCLK>;
-        };
-
-        combo_sval_slash_dot_left_click {
-            timeout-ms = <50>;
-            key-positions = <5 6>;
-            layers = <SVAL_KO>;
-            bindings = <&mkp LCLK>;
-        };
-
-        combo_sval_dot_comma_right_click {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-            layers = <SVAL_KO>;
+            key-positions = <17 18>;
+            layers = <HYBRID SVAL_KO>;
             bindings = <&mkp RCLK>;
         };
 
