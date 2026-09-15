@@ -140,6 +140,16 @@
             quick-tap-ms = <150>;
             bindings = <&kp>, <&ko_yo>;
         };
+
+        ko_yeo_mt: ko_yeo_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KO_YEO_MOD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&ko_yeo>;
+        };
     };
 
     keymap {
@@ -175,8 +185,8 @@
         SvalKo {
             bindings = <
 &kp SQT           &ko_kp A       &ko_kp Q       &ko_kp C       &kp LS(SQT)           &kp SLASH       &kp DOT        &kp COMMA       &kp SEMICOLON &kp BACKSLASH
-&ko_mt LGUI X     &ko_mt LALT S  &ko_mt LCTL D  &ko_mt LSFT F  &ko_lt MOUSE T       &ko_lt MOUSE P  &ko_mt RSFT L  &ko_ya_mt RCTL 0 &ko_yo_mt RALT 0 &ko_mt RGUI O
-&kp EQUAL         &ko_kp W       &ko_kp E       &ko_kp G       &none                 &kp MINUS       &ko_yeo       &ko_kp M         &ko_yu          &none
+&ko_mt LGUI X     &ko_mt LALT S  &ko_mt LCTL D  &ko_mt LSFT F  &ko_lt MOUSE T       &ko_lt MOUSE P  &ko_yeo_mt RSFT 0 &ko_ya_mt RCTL 0 &ko_yo_mt RALT 0 &ko_mt RGUI O
+&kp EQUAL         &ko_kp W       &ko_kp E       &ko_kp G       &ko_kp Z              &kp MINUS       &ko_kp L      &ko_kp M         &ko_yu          &ko_kp V
                                &kp ESCAPE     &ko_lt NUM R   &lt NAV TAB          &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
             >;
         };
@@ -278,11 +288,32 @@
             bindings = <&ko_kp V>;
         };
 
-        combo_ko_gh_k {
+        combo_hybrid_slash_dot_left_click {
             timeout-ms = <50>;
-            key-positions = <23 31>;
+            key-positions = <5 6>;
+            layers = <HYBRID>;
+            bindings = <&mkp LCLK>;
+        };
+
+        combo_hybrid_dot_comma_right_click {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            layers = <HYBRID>;
+            bindings = <&mkp RCLK>;
+        };
+
+        combo_sval_slash_dot_left_click {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
             layers = <SVAL_KO>;
-            bindings = <&ko_kp Z>;
+            bindings = <&mkp LCLK>;
+        };
+
+        combo_sval_dot_comma_right_click {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            layers = <SVAL_KO>;
+            bindings = <&mkp RCLK>;
         };
 
         combo_ko_home_enter {

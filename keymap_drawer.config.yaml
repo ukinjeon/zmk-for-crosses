@@ -58,12 +58,12 @@ parse_config:
     "&ko_mt LSFT F": {t: "ㄹ", h: "Shift"}
     "&ko_lt MOUSE T": {t: "ㅅ", h: "Mouse", s: "ㅆ"}
     "&ko_lt MOUSE P": {t: "ㅔ", h: "Mouse", s: "ㅖ"}
-    "&ko_mt RSFT L": {t: "ㅣ", h: "Shift"}
+    "&ko_yeo_mt RSFT 0": {t: "ㅓ", h: "Shift", s: "ㅕ"}
     "&ko_ya_mt RCTL 0": {t: "ㅏ", h: "Ctrl", s: "ㅑ"}
     "&ko_yo_mt RALT 0": {t: "ㅗ", h: "Alt", s: "ㅛ"}
     "&ko_mt RGUI O": {t: "ㅐ", h: "Cmd", s: "ㅒ"}
     "&ko_lt NUM R": {t: "ㄱ", h: "Num", s: "ㄲ"}
-    "&ko_yeo": {t: "ㅓ", s: "ㅕ"}
+    "&ko_kp L": "ㅣ"
     "&ko_yu": {t: "ㅜ", s: "ㅠ"}
   
   zmk_keycode_map:
