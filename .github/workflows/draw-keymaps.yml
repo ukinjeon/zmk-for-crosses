@@ -6,6 +6,8 @@ on:
     paths:
       - "config/crosses.keymap"
       - "keymap_drawer.config.yaml"
+      - "keymap_drawer.shortcuts.yaml"
+      - ".github/workflows/draw-keymaps.yml"
 
 jobs:
   draw:
@@ -17,4 +19,5 @@ jobs:
       keymap_patterns: "config/crosses.keymap"
       output_folder: "img"  
       config_path: "keymap_drawer.config.yaml"
+      parse_args: "crosses:'-b keymap_drawer.shortcuts.yaml --virtual-layers QWERTY-Shortcuts'"
       install_version: "0.20.0"
