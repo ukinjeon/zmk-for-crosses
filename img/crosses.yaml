@@ -221,6 +221,43 @@ layers:
   - Right Click
   - {t: Left Click, type: held}
   - Mid Click
+  QWERTY-Shortcuts:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Esc
+  - {t: R, h: Num}
+  - {t: Tab, h: Nav}
+  - {t: Shift, h: Fun}
+  - {t: Space, h: Mouse}
+  - Backspace
 combos:
 - p: [11, 12, 13]
   k: Enter
