@@ -4,14 +4,13 @@
 #include <dt-bindings/zmk/modifiers.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define HYBRID 0
-#define SVAL_KO 1
-#define HYBRID_SHORTCUT 2
-#define SVAL_SHORTCUT 3
-#define NUM 4
-#define NAV 5
-#define FUN 6
-#define MOUSE 7
+#define EN 0
+#define KO 1
+#define SHORTCUT 2
+#define NUM 3
+#define NAV 4
+#define FUN 5
+#define MOUSE 6
 
 #define SHORTCUT_MODS (MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)
 
@@ -79,7 +78,7 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_tap &kp LC(SPACE)>, <&macro_tap &to SVAL_KO>;
+            bindings = <&macro_tap &kp LC(SPACE)>, <&macro_tap &to KO>;
         };
 
         lang_to_en: lang_to_en {
@@ -88,7 +87,7 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_tap &kp LC(SPACE)>, <&macro_tap &to HYBRID>;
+            bindings = <&macro_tap &kp LC(SPACE)>, <&macro_tap &to EN>;
         };
 
         ko_yeo: ko_yeo {
@@ -151,6 +150,319 @@
             flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp>, <&ko_yeo>;
+        };
+
+        en_sqt_q: en_sqt_q {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp Q>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_b_w: en_b_w {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp B>, <&kp W>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_h_e: en_h_e {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp H>, <&kp E>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_g_r: en_g_r {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp G>, <&kp R>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_dqt_t: en_dqt_t {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SQT)>, <&kp T>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_slash_y: en_slash_y {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp Y>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_dot_u: en_dot_u {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp U>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_comma_i: en_comma_i {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp I>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_semi_o: en_semi_o {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON>, <&kp O>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_bslash_p: en_bslash_p {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSLASH>, <&kp P>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_c_a: en_c_a {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp C>, <&kp A>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_n_d: en_n_d {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N>, <&kp D>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_t_f: en_t_f {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp F>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_k_g: en_k_g {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp K>, <&kp G>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_w_h: en_w_h {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp W>, <&kp H>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_a_j: en_a_j {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp J>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_e_k: en_e_k {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp K>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_i_l: en_i_l {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp L>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_m_semi: en_m_semi {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp M>, <&kp SEMICOLON>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_equal_z: en_equal_z {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp Z>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_f_x: en_f_x {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp X>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_l_c: en_l_c {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp C>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_d_v: en_d_v {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&kp V>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_v_b: en_v_b {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp V>, <&kp B>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_minus_n: en_minus_n {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp N>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_u_m: en_u_m {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp M>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_o_comma: en_o_comma {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp COMMA>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_y_dot: en_y_dot {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&kp DOT>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_j_slash: en_j_slash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp SLASH>;
+            mods = <SHORTCUT_MODS>;
+            keep-mods = <SHORTCUT_MODS>;
+        };
+
+        en_c_a_mt: en_c_a_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&en_c_a>;
+        };
+
+        en_n_d_mt: en_n_d_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&en_n_d>;
+        };
+
+        en_t_f_mt: en_t_f_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&en_t_f>;
+        };
+
+        en_k_g_lt: en_k_g_lt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&mo>, <&en_k_g>;
+        };
+
+        en_w_h_lt: en_w_h_lt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&mo>, <&en_w_h>;
+        };
+
+        en_a_j_mt: en_a_j_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&en_a_j>;
+        };
+
+        en_e_k_mt: en_e_k_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&en_e_k>;
+        };
+
+        en_i_l_mt: en_i_l_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&en_i_l>;
+        };
+
+        en_m_semi_mt: en_m_semi_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&en_m_semi>;
         };
 
         sc_q: shortcut_q {
@@ -397,30 +709,25 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        hybrid_shortcuts {
-            if-layers = <HYBRID>;
-            then-layer = <HYBRID_SHORTCUT>;
-        };
-
-        sval_shortcuts {
-            if-layers = <SVAL_KO>;
-            then-layer = <SVAL_SHORTCUT>;
+        ko_shortcuts {
+            if-layers = <KO>;
+            then-layer = <SHORTCUT>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        HybridEn {
+        En {
             bindings = <
-&kp SQT        &kp B       &kp H       &kp G       &kp LS(SQT)       &kp SLASH       &kp DOT        &kp COMMA     &kp SEMICOLON &kp BACKSLASH
-&mt LGUI C     &mt LALT S  &mt LCTL N  &mt LSFT T  &lt MOUSE K       &lt MOUSE W      &mt RSFT A     &mt RCTL E    &mt RALT I    &mt RGUI M
-&kp EQUAL      &kp F       &kp L       &kp D       &kp V             &kp MINUS       &kp U          &kp O         &kp Y       &kp J
+&en_sqt_q      &en_b_w     &en_h_e     &en_g_r     &en_dqt_t         &en_slash_y     &en_dot_u      &en_comma_i   &en_semi_o    &en_bslash_p
+&en_c_a_mt LGUI 0 &mt LALT S &en_n_d_mt LCTL 0 &en_t_f_mt LSFT 0 &en_k_g_lt MOUSE 0 &en_w_h_lt MOUSE 0 &en_a_j_mt RSFT 0 &en_e_k_mt RCTL 0 &en_i_l_mt RALT 0 &en_m_semi_mt RGUI 0
+&en_equal_z    &en_f_x     &en_l_c     &en_d_v     &en_v_b           &en_minus_n     &en_u_m        &en_o_comma   &en_y_dot     &en_j_slash
                            &kp ESCAPE  &lt NUM R    &lt NAV TAB        &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
             >;
         };
 
-        SvalKo {
+        Ko {
             bindings = <
 &kp SQT           &ko_kp A       &ko_kp Q       &ko_kp C       &kp LS(SQT)           &kp SLASH       &kp DOT        &kp COMMA       &kp SEMICOLON &kp BACKSLASH
 &ko_mt LGUI X     &ko_mt LALT S  &ko_mt LCTL D  &ko_mt LSFT F  &ko_lt MOUSE T       &ko_lt MOUSE P  &ko_yeo_mt RSFT 0 &ko_ya_mt RCTL 0 &ko_yo_mt RALT 0 &ko_mt RGUI O
@@ -429,16 +736,7 @@
             >;
         };
 
-        HybridShortcuts {
-            bindings = <
-&sc_q       &sc_w       &sc_e       &sc_r       &sc_t           &sc_y       &sc_u       &sc_i       &sc_o       &sc_p
-&sc_a       &sc_s       &sc_d       &sc_f       &sc_g           &sc_h       &sc_j       &sc_k       &sc_l       &sc_semi
-&sc_z       &sc_x       &sc_c       &sc_v       &sc_b           &sc_n       &sc_m       &sc_comma   &sc_dot     &sc_slash
-                        &trans      &trans      &trans          &trans      &trans      &trans
-            >;
-        };
-
-        SvalShortcuts {
+        Shortcuts {
             bindings = <
 &sc_q       &sc_w       &sc_e       &sc_r       &sc_t           &sc_y       &sc_u       &sc_i       &sc_o       &sc_p
 &sc_a       &sc_s       &sc_d       &sc_f       &sc_g           &sc_h       &sc_j       &sc_k       &sc_l       &sc_semi
@@ -477,7 +775,7 @@
         Mouse {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR      &bt BT_CLR      &bootloader &sys_reset &none       &none
-&to HYBRID    &kp LC(SPACE) &to SVAL_KO   &none         &none           &none           &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
+&to EN        &kp LC(SPACE) &to KO        &none         &none           &none           &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
 &trans        &none         &none         &none         &none           &studio_unlock  &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT
                             &mkp MCLK     &mkp LCLK     &mkp RCLK       &mkp RCLK       &mkp LCLK  &mkp MCLK
             >;
@@ -488,109 +786,109 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_hybrid_snt_enter {
+        combo_en_snt_enter {
             timeout-ms = <50>;
             key-positions = <11 12 13>;
-            layers = <HYBRID HYBRID_SHORTCUT>;
+            layers = <EN>;
             bindings = <&kp ENTER>;
         };
 
-        combo_hybrid_bh_w {
+        combo_en_bh_w {
             timeout-ms = <50>;
             key-positions = <1 2>;
-            layers = <HYBRID HYBRID_SHORTCUT>;
+            layers = <EN>;
             bindings = <&kp W>;
         };
 
-        combo_hybrid_fl_x {
+        combo_en_fl_x {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            layers = <HYBRID HYBRID_SHORTCUT>;
+            layers = <EN>;
             bindings = <&kp X>;
         };
 
-        combo_hybrid_ld_p {
+        combo_en_ld_p {
             timeout-ms = <50>;
             key-positions = <22 23>;
-            layers = <HYBRID HYBRID_SHORTCUT>;
+            layers = <EN>;
             bindings = <&kp P>;
         };
 
-        combo_hybrid_hg_q {
+        combo_en_hg_q {
             timeout-ms = <50>;
             key-positions = <2 3>;
-            layers = <HYBRID HYBRID_SHORTCUT>;
+            layers = <EN>;
             bindings = <&kp Q>;
         };
 
-        combo_hybrid_cs_z {
+        combo_en_cs_z {
             timeout-ms = <50>;
             key-positions = <10 11>;
-            layers = <HYBRID HYBRID_SHORTCUT>;
+            layers = <EN>;
             bindings = <&kp Z>;
         };
 
         combo_ko_mb_p {
             timeout-ms = <50>;
             key-positions = <1 2>;
-            layers = <SVAL_KO SVAL_SHORTCUT>;
+            layers = <KO SHORTCUT>;
             bindings = <&ko_kp V>;
         };
 
-        combo_hybrid_sval_home_left_click {
+        combo_en_ko_home_left_click {
             timeout-ms = <50>;
             key-positions = <16 17>;
-            layers = <HYBRID SVAL_KO HYBRID_SHORTCUT SVAL_SHORTCUT>;
+            layers = <EN KO SHORTCUT>;
             bindings = <&mkp LCLK>;
         };
 
-        combo_hybrid_sval_home_right_click {
+        combo_en_ko_home_right_click {
             timeout-ms = <50>;
             key-positions = <17 18>;
-            layers = <HYBRID SVAL_KO HYBRID_SHORTCUT SVAL_SHORTCUT>;
+            layers = <EN KO SHORTCUT>;
             bindings = <&mkp RCLK>;
         };
 
         combo_ko_home_enter {
             timeout-ms = <50>;
             key-positions = <11 12 13>;
-            layers = <SVAL_KO SVAL_SHORTCUT>;
+            layers = <KO SHORTCUT>;
             bindings = <&kp ENTER>;
         };
 
-        combo_hybrid_lang_to_ko {
+        combo_en_lang_to_ko {
             timeout-ms = <70>;
             key-positions = <30 35>;
-            layers = <HYBRID HYBRID_SHORTCUT>;
+            layers = <EN>;
             bindings = <&lang_to_ko>;
         };
 
-        combo_sval_lang_to_en {
+        combo_ko_lang_to_en {
             timeout-ms = <70>;
             key-positions = <30 35>;
-            layers = <SVAL_KO SVAL_SHORTCUT>;
+            layers = <KO SHORTCUT>;
             bindings = <&lang_to_en>;
         };
 
         combo_os_language_toggle {
             timeout-ms = <70>;
             key-positions = <30 34>;
-            layers = <HYBRID SVAL_KO HYBRID_SHORTCUT SVAL_SHORTCUT>;
+            layers = <EN KO SHORTCUT>;
             bindings = <&kp LC(SPACE)>;
         };
 
-        combo_hybrid_layer_to_ko {
+        combo_en_layer_to_ko {
             timeout-ms = <70>;
             key-positions = <32 35>;
-            layers = <HYBRID HYBRID_SHORTCUT>;
-            bindings = <&to SVAL_KO>;
+            layers = <EN>;
+            bindings = <&to KO>;
         };
 
-        combo_sval_layer_to_en {
+        combo_ko_layer_to_en {
             timeout-ms = <70>;
             key-positions = <32 35>;
-            layers = <SVAL_KO SVAL_SHORTCUT>;
-            bindings = <&to HYBRID>;
+            layers = <KO SHORTCUT>;
+            bindings = <&to EN>;
         };
 
         combo_num_12_0 {

@@ -40,6 +40,35 @@ parse_config:
     "&mkp MCLK": "Mid Click"
     "&mkp LCLK": "Left Click"
     "&mkp RCLK": "Right Click"
+    "&en_sqt_q": "'"
+    "&en_b_w": "B"
+    "&en_h_e": "H"
+    "&en_g_r": "G"
+    "&en_dqt_t": "Sft+'"
+    "&en_slash_y": "/"
+    "&en_dot_u": "."
+    "&en_comma_i": ","
+    "&en_semi_o": ";"
+    "&en_bslash_p": "\\"
+    "&en_c_a_mt LGUI 0": {t: "C", h: "Cmd"}
+    "&en_n_d_mt LCTL 0": {t: "N", h: "Ctrl"}
+    "&en_t_f_mt LSFT 0": {t: "T", h: "Shift"}
+    "&en_k_g_lt MOUSE 0": {t: "K", h: "Mouse"}
+    "&en_w_h_lt MOUSE 0": {t: "W", h: "Mouse"}
+    "&en_a_j_mt RSFT 0": {t: "A", h: "Shift"}
+    "&en_e_k_mt RCTL 0": {t: "E", h: "Ctrl"}
+    "&en_i_l_mt RALT 0": {t: "I", h: "Alt"}
+    "&en_m_semi_mt RGUI 0": {t: "M", h: "Cmd"}
+    "&en_equal_z": "="
+    "&en_f_x": "F"
+    "&en_l_c": "L"
+    "&en_d_v": "D"
+    "&en_v_b": "V"
+    "&en_minus_n": "-"
+    "&en_u_m": "U"
+    "&en_o_comma": "O"
+    "&en_y_dot": "Y"
+    "&en_j_slash": "J"
     "&sc_q": "Q"
     "&sc_w": "W"
     "&sc_e": "E"
