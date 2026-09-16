@@ -1,78 +1,4 @@
 layers:
-  Custom:
-  - ''''
-  - B
-  - H
-  - G
-  - Sft+'
-  - /
-  - ','
-  - .
-  - J
-  - X
-  - {t: C, h: Cmd}
-  - {t: S, h: Alt}
-  - {t: N, h: Ctrl}
-  - {t: T, h: Shift}
-  - {t: K, h: Mouse}
-  - {t: ;, h: Fun}
-  - {t: A, h: Shift}
-  - {t: E, h: Ctrl}
-  - {t: I, h: Alt}
-  - {t: M, h: Cmd}
-  - '='
-  - F
-  - L
-  - D
-  - V
-  - '-'
-  - U
-  - O
-  - Y
-  - W
-  - ESC
-  - {t: R, h: Num}
-  - {t: Tab, h: Nav}
-  - {t: Shift, h: Fun}
-  - {t: Space, h: Mouse}
-  - BSPC
-  Qwerty:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: A, h: Cmd}
-  - {t: S, h: Alt}
-  - {t: D, h: Ctrl}
-  - {t: F, h: Shift}
-  - {t: G, h: Mouse}
-  - {t: H, h: Fun}
-  - {t: J, h: Shift}
-  - {t: K, h: Ctrl}
-  - {t: L, h: Alt}
-  - {t: ;, h: Cmd}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ESC
-  - {t: R, h: Num}
-  - {t: Tab, h: Nav}
-  - {t: Shift, h: Fun}
-  - {t: Space, h: Mouse}
-  - BSPC
   HybridEn:
   - ''''
   - B
@@ -311,7 +237,7 @@ layers:
   - F5
   - F6
   - F11
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
@@ -329,7 +255,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   Mouse:
@@ -341,8 +267,8 @@ layers:
   - BT CLR
   - Boot
   - Reset
-  - {t: Qwerty, h: toggle}
-  - {t: Custom, h: toggle}
+  - ''
+  - ''
   - {t: HybridEn, h: toggle}
   - 한/영
   - {t: SvalKo, h: toggle}
@@ -372,25 +298,22 @@ layers:
 combos:
 - p: [11, 12, 13]
   k: Enter
-  l: [Custom, HybridEn, HybridShortcuts]
-- p: [11, 12, 13]
-  k: Enter
-  l: [Qwerty]
+  l: [HybridEn, HybridShortcuts]
 - p: [1, 2]
   k: W
-  l: [Custom, HybridEn, HybridShortcuts]
+  l: [HybridEn, HybridShortcuts]
 - p: [21, 22]
   k: X
-  l: [Custom, HybridEn, HybridShortcuts]
+  l: [HybridEn, HybridShortcuts]
 - p: [22, 23]
   k: P
-  l: [Custom, HybridEn, HybridShortcuts]
+  l: [HybridEn, HybridShortcuts]
 - p: [2, 3]
   k: Q
-  l: [Custom, HybridEn, HybridShortcuts]
+  l: [HybridEn, HybridShortcuts]
 - p: [10, 11]
   k: Z
-  l: [Custom, HybridEn, HybridShortcuts]
+  l: [HybridEn, HybridShortcuts]
 - p: [1, 2]
   k: ㅍ
   l: [SvalKo, SvalShortcuts]
