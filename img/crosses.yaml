@@ -1,5 +1,5 @@
 layers:
-  HybridEn:
+  En:
   - ''''
   - B
   - H
@@ -36,7 +36,7 @@ layers:
   - {t: Shift, h: Fun}
   - {t: Space, h: Mouse}
   - BSPC
-  SvalKo:
+  Ko:
   - ''''
   - ㅁ
   - {t: ㅂ, s: ㅃ}
@@ -73,44 +73,7 @@ layers:
   - {t: Shift, h: Fun}
   - {t: Space, h: Mouse}
   - BSPC
-  HybridShortcuts:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  SvalShortcuts:
+  Shortcuts:
   - Q
   - W
   - E
@@ -269,11 +232,11 @@ layers:
   - Reset
   - ''
   - ''
-  - {t: HybridEn, h: toggle}
+  - {t: En, h: toggle}
   - 한/영
-  - {t: SvalKo, h: toggle}
+  - {t: Ko, h: toggle}
   - ''
-  - {type: held}
+  - ''
   - ''
   - Mouse ←
   - Mouse ↓
@@ -293,54 +256,54 @@ layers:
   - Left Click
   - Right Click
   - Right Click
-  - Left Click
+  - {t: Left Click, type: held}
   - Mid Click
 combos:
 - p: [11, 12, 13]
   k: Enter
-  l: [HybridEn, HybridShortcuts]
+  l: [En]
 - p: [1, 2]
   k: W
-  l: [HybridEn, HybridShortcuts]
+  l: [En]
 - p: [21, 22]
   k: X
-  l: [HybridEn, HybridShortcuts]
+  l: [En]
 - p: [22, 23]
   k: P
-  l: [HybridEn, HybridShortcuts]
+  l: [En]
 - p: [2, 3]
   k: Q
-  l: [HybridEn, HybridShortcuts]
+  l: [En]
 - p: [10, 11]
   k: Z
-  l: [HybridEn, HybridShortcuts]
+  l: [En]
 - p: [1, 2]
   k: ㅍ
-  l: [SvalKo, SvalShortcuts]
+  l: [Ko, Shortcuts]
 - p: [16, 17]
   k: Left Click
-  l: [HybridEn, SvalKo, HybridShortcuts, SvalShortcuts]
+  l: [En, Ko, Shortcuts]
 - p: [17, 18]
   k: Right Click
-  l: [HybridEn, SvalKo, HybridShortcuts, SvalShortcuts]
+  l: [En, Ko, Shortcuts]
 - p: [11, 12, 13]
   k: Enter
-  l: [SvalKo, SvalShortcuts]
+  l: [Ko, Shortcuts]
 - p: [30, 35]
   k: 한글+KO
-  l: [HybridEn, HybridShortcuts]
+  l: [En]
 - p: [30, 35]
   k: 영문+EN
-  l: [SvalKo, SvalShortcuts]
+  l: [Ko, Shortcuts]
 - p: [30, 34]
   k: 한/영
-  l: [HybridEn, SvalKo, HybridShortcuts, SvalShortcuts]
+  l: [En, Ko, Shortcuts]
 - p: [32, 35]
-  k: {t: SvalKo, h: toggle}
-  l: [HybridEn, HybridShortcuts]
+  k: {t: Ko, h: toggle}
+  l: [En]
 - p: [32, 35]
-  k: {t: HybridEn, h: toggle}
-  l: [SvalKo, SvalShortcuts]
+  k: {t: En, h: toggle}
+  l: [Ko, Shortcuts]
 - p: [21, 22]
   k: '0'
   l: [Num]
