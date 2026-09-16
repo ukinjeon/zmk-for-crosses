@@ -4,16 +4,14 @@
 #include <dt-bindings/zmk/modifiers.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define CUSTOM 0
-#define QWERTY 1
-#define HYBRID 2
-#define SVAL_KO 3
-#define HYBRID_SHORTCUT 4
-#define SVAL_SHORTCUT 5
-#define NUM 6
-#define NAV 7
-#define FUN 8
-#define MOUSE 9
+#define HYBRID 0
+#define SVAL_KO 1
+#define HYBRID_SHORTCUT 2
+#define SVAL_SHORTCUT 3
+#define NUM 4
+#define NAV 5
+#define FUN 6
+#define MOUSE 7
 
 #define SHORTCUT_MODS (MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)
 
@@ -413,24 +411,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Custom {
-            bindings = <
-&kp SQT        &kp B       &kp H       &kp G       &kp LS(SQT)       &kp SLASH       &kp COMMA      &kp DOT       &kp J       &kp X
-&mt LGUI C     &mt LALT S  &mt LCTL N  &mt LSFT T  &lt MOUSE K       &lt FUN SEMICOLON &mt RSFT A     &mt RCTL E    &mt RALT I    &mt RGUI M
-&kp EQUAL      &kp F       &kp L       &kp D       &kp V             &kp MINUS       &kp U          &kp O         &kp Y       &kp W
-                           &kp ESCAPE  &lt NUM R    &lt NAV TAB        &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
-            >;
-        };
-
-        Qwerty {
-            bindings = <
-&kp Q          &kp W       &kp E       &kp R       &kp T             &kp Y           &kp U          &kp I         &kp O       &kp P
-&mt LGUI A     &mt LALT S  &mt LCTL D  &mt LSFT F  &lt MOUSE G       &lt FUN H        &mt RSFT J     &mt RCTL K    &mt RALT L    &mt RGUI SEMICOLON
-&kp Z          &kp X       &kp C       &kp V       &kp B             &kp N           &kp M          &kp COMMA     &kp DOT     &kp SLASH
-                           &kp ESCAPE  &lt NUM R    &lt NAV TAB        &td_r1 FUN LEFT_SHIFT &lt MOUSE SPACE &kp BACKSPACE
-            >;
-        };
-
         HybridEn {
             bindings = <
 &kp SQT        &kp B       &kp H       &kp G       &kp LS(SQT)       &kp SLASH       &kp DOT        &kp COMMA     &kp SEMICOLON &kp BACKSLASH
@@ -496,7 +476,7 @@
 
         Mouse {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR      &bt BT_CLR      &bootloader &sys_reset &to QWERTY  &to CUSTOM
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR      &bt BT_CLR      &bootloader &sys_reset &none       &none
 &to HYBRID    &kp LC(SPACE) &to SVAL_KO   &none         &none           &none           &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT
 &trans        &none         &none         &none         &none           &studio_unlock  &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT
                             &mkp MCLK     &mkp LCLK     &mkp RCLK       &mkp RCLK       &mkp LCLK  &mkp MCLK
@@ -508,52 +488,45 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_custom_snt_enter {
+        combo_hybrid_snt_enter {
             timeout-ms = <50>;
             key-positions = <11 12 13>;
-            layers = <CUSTOM HYBRID HYBRID_SHORTCUT>;
+            layers = <HYBRID HYBRID_SHORTCUT>;
             bindings = <&kp ENTER>;
         };
 
-        combo_qwerty_sdf_enter {
-            timeout-ms = <50>;
-            key-positions = <11 12 13>;
-            layers = <QWERTY>;
-            bindings = <&kp ENTER>;
-        };
-
-        combo_custom_bh_w {
+        combo_hybrid_bh_w {
             timeout-ms = <50>;
             key-positions = <1 2>;
-            layers = <CUSTOM HYBRID HYBRID_SHORTCUT>;
+            layers = <HYBRID HYBRID_SHORTCUT>;
             bindings = <&kp W>;
         };
 
-        combo_custom_fl_x {
+        combo_hybrid_fl_x {
             timeout-ms = <50>;
             key-positions = <21 22>;
-            layers = <CUSTOM HYBRID HYBRID_SHORTCUT>;
+            layers = <HYBRID HYBRID_SHORTCUT>;
             bindings = <&kp X>;
         };
 
-        combo_custom_ld_p {
+        combo_hybrid_ld_p {
             timeout-ms = <50>;
             key-positions = <22 23>;
-            layers = <CUSTOM HYBRID HYBRID_SHORTCUT>;
+            layers = <HYBRID HYBRID_SHORTCUT>;
             bindings = <&kp P>;
         };
 
-        combo_custom_hg_q {
+        combo_hybrid_hg_q {
             timeout-ms = <50>;
             key-positions = <2 3>;
-            layers = <CUSTOM HYBRID HYBRID_SHORTCUT>;
+            layers = <HYBRID HYBRID_SHORTCUT>;
             bindings = <&kp Q>;
         };
 
-        combo_custom_cs_z {
+        combo_hybrid_cs_z {
             timeout-ms = <50>;
             key-positions = <10 11>;
-            layers = <CUSTOM HYBRID HYBRID_SHORTCUT>;
+            layers = <HYBRID HYBRID_SHORTCUT>;
             bindings = <&kp Z>;
         };
 
