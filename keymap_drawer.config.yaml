@@ -69,61 +69,41 @@ parse_config:
     "&en_o_comma": "O"
     "&en_y_dot": "Y"
     "&en_j_slash": "J"
-    "&sc_q": "Q"
-    "&sc_w": "W"
-    "&sc_e": "E"
-    "&sc_r": "R"
-    "&sc_t": "T"
-    "&sc_y": "Y"
-    "&sc_u": "U"
-    "&sc_i": "I"
-    "&sc_o": "O"
-    "&sc_p": "P"
-    "&sc_a": "A"
-    "&sc_s": "S"
-    "&sc_d": "D"
-    "&sc_f": "F"
-    "&sc_g": "G"
-    "&sc_h": "H"
-    "&sc_j": "J"
-    "&sc_k": "K"
-    "&sc_l": "L"
-    "&sc_semi": ";"
-    "&sc_z": "Z"
-    "&sc_x": "X"
-    "&sc_c": "C"
-    "&sc_v": "V"
-    "&sc_b": "B"
-    "&sc_n": "N"
-    "&sc_m": "M"
-    "&sc_comma": ","
-    "&sc_dot": "."
-    "&sc_slash": "/"
+    "&ko_sqt_q": "'"
+    "&ko_a_w": "ㅁ"
+    "&ko_q_e": {t: "ㅂ", s: "ㅃ"}
+    "&ko_c_r": "ㅊ"
+    "&ko_dqt_t": "Sft+'"
+    "&ko_slash_y": "/"
+    "&ko_dot_u": "."
+    "&ko_comma_i": ","
+    "&ko_semi_o": ";"
+    "&ko_bslash_p": "\\"
+    "&ko_equal_z": "="
+    "&ko_w_x": {t: "ㅈ", s: "ㅉ"}
+    "&ko_e_c": {t: "ㄷ", s: "ㄸ"}
+    "&ko_g_v": "ㅎ"
+    "&ko_z_b": "ㅋ"
+    "&ko_minus_n": "-"
+    "&ko_l_m": "ㅣ"
+    "&ko_m_comma": "ㅡ"
+    "&ko_yu_dot": {t: "ㅜ", s: "ㅠ"}
+    "&ko_v_slash": "ㅍ"
     "&lang_to_ko": "한글+KO"
     "&lang_to_en": "영문+EN"
     "&kp LC(SPACE)": "한/영"
     "&ko_kp V": "ㅍ"
-    "&ko_kp Z": "ㅋ"
-    "&ko_kp A": "ㅁ"
-    "&ko_kp C": "ㅊ"
-    "&ko_kp Q": {t: "ㅂ", s: "ㅃ"}
-    "&ko_kp W": {t: "ㅈ", s: "ㅉ"}
-    "&ko_kp E": {t: "ㄷ", s: "ㄸ"}
-    "&ko_kp G": "ㅎ"
-    "&ko_kp M": "ㅡ"
-    "&ko_mt LGUI X": {t: "ㅌ", h: "Cmd"}
+    "&ko_x_a_mt LGUI 0": {t: "ㅌ", h: "Cmd"}
     "&ko_mt LALT S": {t: "ㄴ", h: "Alt"}
     "&ko_mt LCTL D": {t: "ㅇ", h: "Ctrl"}
     "&ko_mt LSFT F": {t: "ㄹ", h: "Shift"}
-    "&ko_lt MOUSE T": {t: "ㅅ", h: "Mouse", s: "ㅆ"}
-    "&ko_lt MOUSE P": {t: "ㅔ", h: "Mouse", s: "ㅖ"}
+    "&ko_t_g_lt MOUSE 0": {t: "ㅅ", h: "Mouse", s: "ㅆ"}
+    "&ko_p_h_lt MOUSE 0": {t: "ㅔ", h: "Mouse", s: "ㅖ"}
     "&ko_yeo_mt RSFT 0": {t: "ㅓ", h: "Shift", s: "ㅕ"}
     "&ko_ya_mt RCTL 0": {t: "ㅏ", h: "Ctrl", s: "ㅑ"}
     "&ko_yo_mt RALT 0": {t: "ㅗ", h: "Alt", s: "ㅛ"}
-    "&ko_mt RGUI O": {t: "ㅐ", h: "Cmd", s: "ㅒ"}
+    "&ko_o_semi_mt RGUI 0": {t: "ㅐ", h: "Cmd", s: "ㅒ"}
     "&ko_lt NUM R": {t: "ㄱ", h: "Num", s: "ㄲ"}
-    "&ko_kp L": "ㅣ"
-    "&ko_yu": {t: "ㅜ", s: "ㅠ"}
   
   zmk_keycode_map:
     EXCLAMATION: '!'
