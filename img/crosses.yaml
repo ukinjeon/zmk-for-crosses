@@ -1,10 +1,10 @@
 layers:
   En:
-  - ''''
+  - '='
   - B
   - H
   - G
-  - Sft+'
+  - V
   - /
   - .
   - ','
@@ -20,11 +20,11 @@ layers:
   - {t: E, h: Ctrl}
   - {t: I, h: Alt}
   - {t: M, h: Cmd}
-  - '='
+  - ''''
   - F
   - L
   - D
-  - V
+  - '"'
   - '-'
   - U
   - O
@@ -37,11 +37,11 @@ layers:
   - {t: Space, h: Mouse}
   - BSPC
   Ko:
-  - ''''
-  - ㅁ
-  - {t: ㅂ, s: ㅃ}
+  - '='
+  - {t: ㅈ, s: ㅉ}
+  - {t: ㄷ, s: ㄸ}
+  - {t: ㅅ, s: ㅆ}
   - ㅊ
-  - Sft+'
   - /
   - .
   - ','
@@ -50,18 +50,18 @@ layers:
   - {t: ㅌ, h: Cmd}
   - {t: ㄴ, h: Alt}
   - {t: ㅇ, h: Ctrl}
-  - {t: ㄹ, h: Shift}
-  - {t: ㅅ, h: Mouse, s: ㅆ}
+  - {t: ㄹ, h: Shift, s: ㅊ}
+  - {t: ㅎ, h: Mouse, s: ㅋ}
   - {t: ㅔ, h: Mouse, s: ㅖ}
   - {t: ㅓ, h: Shift, s: ㅕ}
   - {t: ㅏ, h: Ctrl, s: ㅑ}
   - {t: ㅗ, h: Alt, s: ㅛ}
   - {t: ㅐ, h: Cmd, s: ㅒ}
-  - '='
-  - {t: ㅈ, s: ㅉ}
-  - {t: ㄷ, s: ㄸ}
-  - ㅎ
+  - ''''
+  - ㅁ
+  - {t: ㅂ, s: ㅃ}
   - ㅋ
+  - '"'
   - '-'
   - ㅣ
   - ㅡ
@@ -285,6 +285,12 @@ combos:
   l: [En, Ko]
 - p: [17, 18]
   k: Right Click
+  l: [En, Ko]
+- p: [26, 27]
+  k: Scroll ↓
+  l: [En, Ko]
+- p: [27, 28]
+  k: Scroll ↑
   l: [En, Ko]
 - p: [11, 12, 13]
   k: Enter
